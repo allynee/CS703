@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+# CS703
+Applying convex optimization to meta-learning approaches for few-shot learning
+===================================================================================
+
 # Meta-Learning with Differentiable Convex Optimization
 This repository contains the code for the paper:
 <br>
@@ -86,7 +89,3 @@ python test.py --gpu 0,1,2,3 --load ./experiments/miniImageNet_MetaOptNet_SVM/be
 ## Acknowledgments
 
 This code is based on the implementations of [**Prototypical Networks**](https://github.com/cyvius96/prototypical-network-pytorch),  [**Dynamic Few-Shot Visual Learning without Forgetting**](https://github.com/gidariss/FewShotWithoutForgetting), and [**DropBlock**](https://github.com/miguelvr/dropblock).
-=======
-# CS703
-Applying convex optimization to meta-learning approaches for few-shot learning
->>>>>>> f93065a10fdde1cc51284049975a9952f76bbf15
