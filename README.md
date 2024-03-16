@@ -1,6 +1,4 @@
-# CS703
-Applying convex optimization to meta-learning approaches for few-shot learning
-===================================================================================
+# CS703: Applying convex optimization to meta-learning approaches for few-shot learning
 
 # Meta-Learning with Differentiable Convex Optimization
 This repository contains the code for the paper:
