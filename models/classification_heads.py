@@ -86,6 +86,7 @@ def MetaOptNetHead_Ridge(query, support, support_labels, n_way, n_shot, lambda_r
     assert(query.dim() == 3)
     assert(support.dim() == 3)
     assert(query.size(0) == support.size(0) and query.size(2) == support.size(2))
+    print("n_support:", n_support, "n_way:", n_way, "n_shot:", n_shot)
     assert(n_support == n_way * n_shot)      # n_support must equal to n_way * n_shot
 
     #Here we solve the dual problem:
@@ -544,9 +545,10 @@ class ClassificationHead(nn.Module):
         # Add a learnable scale
         self.enable_scale = enable_scale
         self.scale = nn.Parameter(torch.FloatTensor([1.0]))
-        
-    def forward(self, query, support, support_labels, n_way, n_shot, **kwargs):
-        if self.enable_scale:
-            return self.scale * self.head(query, support, support_labels, n_way, n_shot, **kwargs)
+
+    @staticmethod
+    def forward(head, scale, enable_scale, query, support, support_labels, n_way, n_shot, **kwargs):
+        if enable_scale:
+            return scale * head(query, support, support_labels, n_way, n_shot, **kwargs)
         else:
-            return self.head(query, support, support_labels, n_way, n_shot, **kwargs)
+            return head(query, support, support_labels, n_way, n_shot, **kwargs)

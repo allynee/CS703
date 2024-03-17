@@ -1,0 +1,101 @@
+Requirement already satisfied: cvxpy in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from -r requirements.txt (line 1)) (1.1.24)
+Requirement already satisfied: enum34 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from -r requirements.txt (line 2)) (1.1.10)
+Requirement already satisfied: h5py in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from -r requirements.txt (line 3)) (3.1.0)
+Requirement already satisfied: numpy in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from -r requirements.txt (line 4)) (1.19.5)
+Collecting torch>=1.7.1
+  Downloading torch-1.10.2-cp36-cp36m-manylinux1_x86_64.whl (881.9 MB)
+Collecting torchvision>=0.8.2
+  Downloading torchvision-0.11.2-cp36-cp36m-manylinux1_x86_64.whl (23.3 MB)
+Requirement already satisfied: qpth==0.0.13 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from -r requirements.txt (line 9)) (0.0.13)
+Requirement already satisfied: torchnet in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from -r requirements.txt (line 10)) (0.0.4)
+Requirement already satisfied: tqdm in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from -r requirements.txt (line 11)) (4.64.1)
+Requirement already satisfied: scs>=1.1.6 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from cvxpy->-r requirements.txt (line 1)) (3.2.2)
+Requirement already satisfied: ecos>=2 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from cvxpy->-r requirements.txt (line 1)) (2.0.10)
+Requirement already satisfied: osqp>=0.4.1 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from cvxpy->-r requirements.txt (line 1)) (0.6.5)
+Requirement already satisfied: scipy>=1.1.0 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from cvxpy->-r requirements.txt (line 1)) (1.5.4)
+Requirement already satisfied: cached-property in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from h5py->-r requirements.txt (line 3)) (1.5.2)
+Collecting typing-extensions
+  Downloading typing_extensions-4.1.1-py3-none-any.whl (26 kB)
+Collecting dataclasses
+  Downloading dataclasses-0.8-py3-none-any.whl (19 kB)
+Collecting torch>=1.7.1
+  Downloading torch-1.10.1-cp36-cp36m-manylinux1_x86_64.whl (881.9 MB)
+Requirement already satisfied: pillow!=8.3.0,>=5.3.0 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from torchvision>=0.8.2->-r requirements.txt (line 8)) (8.4.0)
+Requirement already satisfied: visdom in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from torchnet->-r requirements.txt (line 10)) (0.2.4)
+Requirement already satisfied: six in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from torchnet->-r requirements.txt (line 10)) (1.16.0)
+Requirement already satisfied: importlib-resources in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from tqdm->-r requirements.txt (line 11)) (5.4.0)
+Requirement already satisfied: qdldl in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from osqp>=0.4.1->cvxpy->-r requirements.txt (line 1)) (0.1.7.post0)
+Requirement already satisfied: zipp>=3.1.0 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from importlib-resources->tqdm->-r requirements.txt (line 11)) (3.6.0)
+Requirement already satisfied: jsonpatch in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from visdom->torchnet->-r requirements.txt (line 10)) (1.32)
+Requirement already satisfied: tornado in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from visdom->torchnet->-r requirements.txt (line 10)) (6.1)
+Requirement already satisfied: networkx in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from visdom->torchnet->-r requirements.txt (line 10)) (2.5.1)
+Requirement already satisfied: websocket-client in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from visdom->torchnet->-r requirements.txt (line 10)) (1.3.1)
+Requirement already satisfied: requests in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from visdom->torchnet->-r requirements.txt (line 10)) (2.27.1)
+Requirement already satisfied: jsonpointer>=1.9 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from jsonpatch->visdom->torchnet->-r requirements.txt (line 10)) (2.3)
+Requirement already satisfied: decorator<5,>=4.3 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from networkx->visdom->torchnet->-r requirements.txt (line 10)) (4.4.2)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from requests->visdom->torchnet->-r requirements.txt (line 10)) (1.26.18)
+Requirement already satisfied: idna<4,>=2.5 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from requests->visdom->torchnet->-r requirements.txt (line 10)) (3.6)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from requests->visdom->torchnet->-r requirements.txt (line 10)) (2.0.12)
+Requirement already satisfied: certifi>=2017.4.17 in /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages (from requests->visdom->torchnet->-r requirements.txt (line 10)) (2021.5.30)
+Installing collected packages: typing-extensions, dataclasses, torch, torchvision
+  Attempting uninstall: torch
+    Found existing installation: torch 1.0.1.post2
+    Uninstalling torch-1.0.1.post2:
+      Successfully uninstalled torch-1.0.1.post2
+  Attempting uninstall: torchvision
+    Found existing installation: torchvision 0.2.2.post2
+    Uninstalling torchvision-0.2.2.post2:
+      Successfully uninstalled torchvision-0.2.2.post2
+Successfully installed dataclasses-0.8 torch-1.10.1 torchvision-0.11.2 typing-extensions-4.1.1
+You are allocated NVIDIA GeForce RTX 3090 on lava
+You are using GPU 0
+Loading FC100 dataset - phase train
+Loading FC100 dataset - phase val
+using gpu: 0, 1, 2, 3
+{'num_epoch': 60, 'save_epoch': 10, 'train_shot': 15, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/FC100_MetaOptNet_RR', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'Ridge', 'dataset': 'FC100', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/cuda/__init__.py:143: UserWarning: 
+NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:134: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+  0%|          | 0/1000 [00:00<?, ?it/s]  0%|          | 0/1000 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 201, in <module>
+    emb_support = embedding_net(data_support.reshape([-1] + list(data_support.shape[-3:])))
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/common/home/projectgrps/CS704/CS704G1/MetaOptNet/models/ResNet12_embedding.py", line 111, in forward
+    x = self.layer1(x)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/common/home/projectgrps/CS704/CS704G1/MetaOptNet/models/ResNet12_embedding.py", line 43, in forward
+    out = self.bn1(out)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+srun: error: lava: task 0: Exited with exit code 1
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/nn/modules/batchnorm.py", line 148, in forward
+srun: Terminating StepId=48279.1
+    self.num_batches_tracked = self.num_batches_tracked + 1  # type: ignore[has-type]
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Job ID: 48279
+Cluster: crimson
+User/Group: CS704G1/CS704G1
+State: RUNNING
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:42
+CPU Efficiency: 15.91% of 00:04:24 core-walltime
+Job Wall-clock time: 00:01:06
+Memory Utilized: 56.36 MB
+Memory Efficiency: 0.34% of 16.00 GB
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.

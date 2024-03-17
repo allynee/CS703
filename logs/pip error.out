@@ -1,0 +1,148 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.12.0
+  latest version: 24.1.2
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning
+
+  added / updated specs:
+    - python=3.5
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    _openmp_mutex-5.1          |            1_gnu          21 KB  defaults
+    ca-certificates-2023.12.12 |       h06a4308_0         126 KB  defaults
+    certifi-2020.6.20          |     pyhd3eb1b0_3         155 KB  defaults
+    libgcc-ng-11.2.0           |       h1234567_1         5.3 MB  defaults
+    libgomp-11.2.0             |       h1234567_1         474 KB  defaults
+    libstdcxx-ng-11.2.0        |       h1234567_1         4.7 MB  defaults
+    ncurses-6.4                |       h6a678d5_0         914 KB  defaults
+    openssl-1.1.1w             |       h7f8727e_0         3.7 MB  defaults
+    pip-10.0.1                 |           py35_0         1.6 MB  defaults
+    python-3.5.6               |       h12debd9_1        24.9 MB  defaults
+    readline-8.2               |       h5eee18b_0         357 KB  defaults
+    setuptools-40.2.0          |           py35_0         490 KB  defaults
+    sqlite-3.41.2              |       h5eee18b_0         1.2 MB  defaults
+    tk-8.6.12                  |       h1ccaba5_0         3.0 MB  defaults
+    xz-5.4.6                   |       h5eee18b_0         651 KB  defaults
+    zlib-1.2.13                |       h5eee18b_0         103 KB  defaults
+    ------------------------------------------------------------
+                                           Total:        47.7 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2023.12.12-h06a4308_0
+  certifi            pkgs/main/noarch::certifi-2020.6.20-pyhd3eb1b0_3
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_2
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0
+  openssl            pkgs/main/linux-64::openssl-1.1.1w-h7f8727e_0
+  pip                pkgs/main/linux-64::pip-10.0.1-py35_0
+  python             pkgs/main/linux-64::python-3.5.6-h12debd9_1
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0
+  setuptools         pkgs/main/linux-64::setuptools-40.2.0-py35_0
+  sqlite             pkgs/main/linux-64::sqlite-3.41.2-h5eee18b_0
+  tk                 pkgs/main/linux-64::tk-8.6.12-h1ccaba5_0
+  wheel              pkgs/main/noarch::wheel-0.37.1-pyhd3eb1b0_0
+  xz                 pkgs/main/linux-64::xz-5.4.6-h5eee18b_0
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_0
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages
+libstdcxx-ng-11.2.0  | 4.7 MB    |            |   0% libstdcxx-ng-11.2.0  | 4.7 MB    | ########## | 100% libstdcxx-ng-11.2.0  | 4.7 MB    | ########## | 100% 
+setuptools-40.2.0    | 490 KB    |            |   0% setuptools-40.2.0    | 490 KB    | ########## | 100% setuptools-40.2.0    | 490 KB    | ########## | 100% 
+libgcc-ng-11.2.0     | 5.3 MB    |            |   0% libgcc-ng-11.2.0     | 5.3 MB    | ########## | 100% libgcc-ng-11.2.0     | 5.3 MB    | ########## | 100% 
+_openmp_mutex-5.1    | 21 KB     |            |   0% _openmp_mutex-5.1    | 21 KB     | ########## | 100% _openmp_mutex-5.1    | 21 KB     | ########## | 100% 
+libgomp-11.2.0       | 474 KB    |            |   0% libgomp-11.2.0       | 474 KB    | ########## | 100% libgomp-11.2.0       | 474 KB    | ########## | 100% 
+readline-8.2         | 357 KB    |            |   0% readline-8.2         | 357 KB    | ########## | 100% readline-8.2         | 357 KB    | ########## | 100% 
+openssl-1.1.1w       | 3.7 MB    |            |   0% openssl-1.1.1w       | 3.7 MB    | ########## | 100% openssl-1.1.1w       | 3.7 MB    | ########## | 100% 
+certifi-2020.6.20    | 155 KB    |            |   0% certifi-2020.6.20    | 155 KB    | ########## | 100% certifi-2020.6.20    | 155 KB    | ########## | 100% 
+ncurses-6.4          | 914 KB    |            |   0% ncurses-6.4          | 914 KB    | ########## | 100% ncurses-6.4          | 914 KB    | ########## | 100% 
+tk-8.6.12            | 3.0 MB    |            |   0% tk-8.6.12            | 3.0 MB    | ########## | 100% tk-8.6.12            | 3.0 MB    | ########## | 100% 
+sqlite-3.41.2        | 1.2 MB    |            |   0% sqlite-3.41.2        | 1.2 MB    | ########## | 100% sqlite-3.41.2        | 1.2 MB    | ########## | 100% 
+zlib-1.2.13          | 103 KB    |            |   0% zlib-1.2.13          | 103 KB    | ########## | 100% zlib-1.2.13          | 103 KB    | ########## | 100% 
+ca-certificates-2023 | 126 KB    |            |   0% ca-certificates-2023 | 126 KB    | ########## | 100% ca-certificates-2023 | 126 KB    | ########## | 100% 
+python-3.5.6         | 24.9 MB   |            |   0% python-3.5.6         | 24.9 MB   | ######4    |  65% python-3.5.6         | 24.9 MB   | ########## | 100% 
+xz-5.4.6             | 651 KB    |            |   0% xz-5.4.6             | 651 KB    | ########## | 100% xz-5.4.6             | 651 KB    | ########## | 100% 
+pip-10.0.1           | 1.6 MB    |            |   0% pip-10.0.1           | 1.6 MB    | ########## | 100% pip-10.0.1           | 1.6 MB    | ########## | 100% 
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+#
+# To activate this environment, use
+#
+#     $ conda activate metalearning
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+Exception:
+Traceback (most recent call last):
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.5/site-packages/pip/_internal/basecommand.py", line 228, in main
+    status = self.run(options, args)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.5/site-packages/pip/_internal/commands/install.py", line 241, in run
+    with self._build_session(options) as session:
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.5/site-packages/pip/_internal/basecommand.py", line 78, in _build_session
+    if options.cache_dir else None
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.5/posixpath.py", line 89, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.5/genericpath.py", line 143, in _check_arg_types
+    (funcname, s.__class__.__name__)) from None
+TypeError: join() argument must be str or bytes, not 'int'
+Traceback (most recent call last):
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/bin/pip", line 11, in <module>
+    sys.exit(main())
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.5/site-packages/pip/_internal/__init__.py", line 246, in main
+    return command.main(cmd_args)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.5/site-packages/pip/_internal/basecommand.py", line 264, in main
+    timeout=min(5, options.timeout)) as session:
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.5/site-packages/pip/_internal/basecommand.py", line 78, in _build_session
+    if options.cache_dir else None
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.5/posixpath.py", line 89, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.5/genericpath.py", line 143, in _check_arg_types
+    (funcname, s.__class__.__name__)) from None
+TypeError: join() argument must be str or bytes, not 'int'
+You are allocated NVIDIA GeForce RTX 3090 on toga
+You are using GPU 2
+Traceback (most recent call last):
+  File "train.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+srun: error: toga: task 0: Exited with exit code 1
+srun: Terminating StepId=48260.1
+Job ID: 48260
+Cluster: crimson
+User/Group: CS704G1/CS704G1
+State: RUNNING
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:01:48 core-walltime
+Job Wall-clock time: 00:00:27
+Memory Utilized: 3.31 MB
+Memory Efficiency: 0.02% of 16.00 GB
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.

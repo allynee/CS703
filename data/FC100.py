@@ -27,7 +27,8 @@ from pdb import set_trace as breakpoint
 
 
 # Set the appropriate paths of the datasets here.
-_FC100_DATASET_DIR = '/mnt/cube/datasets/few-shot/FC100'
+_FC100_DATASET_DIR = '/common/home/projectgrps/CS704/CS704G1/dataset/FC100'
+# '/mnt/cube/datasets/few-shot/FC100'
 
 def buildLabelIndex(labels):
     label2inds = {}
@@ -406,6 +407,8 @@ class FewShotDataloader():
             Exemplars, Test, Kall, nKbase = self.sample_episode()
             Xt, Yt = self.createExamplesTensorData(Test)
             Kall = torch.LongTensor(Kall)
+            if batch_size_current < self.batch_size:
+                print("Um it is smaller...")
             if len(Exemplars) > 0:
                 Xe, Ye = self.createExamplesTensorData(Exemplars)
                 return Xe, Ye, Xt, Yt, Kall, nKbase

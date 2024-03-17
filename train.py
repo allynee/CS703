@@ -204,7 +204,8 @@ if __name__ == '__main__':
             emb_query = embedding_net(data_query.reshape([-1] + list(data_query.shape[-3:])))
             emb_query = emb_query.reshape(opt.episodes_per_batch, train_n_query, -1)
             
-            logit_query = cls_head(emb_query, emb_support, labels_support, opt.train_way, opt.train_shot)
+            # logit_query = cls_head(emb_query, emb_support, labels_support, opt.train_way, opt.train_shot)
+            logit_query = cls_head.forward(cls_head.head, cls_head.scale, cls_head.enable_scale, emb_query, emb_support, labels_support, opt.train_way, opt.train_shot)
 
             smoothed_one_hot = one_hot(labels_query.reshape(-1), opt.train_way)
             smoothed_one_hot = smoothed_one_hot * (1 - opt.eps) + (1 - smoothed_one_hot) * opt.eps / (opt.train_way - 1)
@@ -244,7 +245,8 @@ if __name__ == '__main__':
             emb_query = embedding_net(data_query.reshape([-1] + list(data_query.shape[-3:])))
             emb_query = emb_query.reshape(1, test_n_query, -1)
 
-            logit_query = cls_head(emb_query, emb_support, labels_support, opt.test_way, opt.val_shot)
+            # logit_query = cls_head(emb_query, emb_support, labels_support, opt.test_way, opt.val_shot)
+            logit_query = cls_head.forward(cls_head.head, cls_head.scale, cls_head.enable_scale, emb_query, emb_support, labels_support, opt.train_way, opt.train_shot)
 
             loss = x_entropy(logit_query.reshape(-1, opt.test_way), labels_query.reshape(-1))
             acc = count_accuracy(logit_query.reshape(-1, opt.test_way), labels_query.reshape(-1))
