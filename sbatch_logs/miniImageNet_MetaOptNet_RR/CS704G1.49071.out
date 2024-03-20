@@ -1,0 +1,39 @@
+You are allocated NVIDIA GeForce RTX 3090 on lava
+You are using GPU 3
+Loading mini ImageNet dataset - phase train
+Loading mini ImageNet dataset - phase val
+using gpu: 0, 1, 2, 3
+{'num_epoch': 60, 'save_epoch': 10, 'train_shot': 15, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/miniImageNet_MetaOptNet_RR', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'Ridge', 'dataset': 'miniImageNet', 'episodes_per_batch': 8, 'eps': 0.1}
+Traceback (most recent call last):
+  File "train.py", line 164, in <module>
+    (embedding_net, cls_head) = get_model(opt)
+  File "train.py", line 45, in get_model
+    network = torch.nn.DataParallel(network, device_ids=[0, 1, 2, 3])
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 142, in __init__
+    _check_balance(self.device_ids)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 23, in _check_balance
+    dev_props = _get_devices_properties(device_ids)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/_utils.py", line 464, in _get_devices_properties
+    return [_get_device_attr(lambda m: m.get_device_properties(i)) for i in device_ids]
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/_utils.py", line 464, in <listcomp>
+    return [_get_device_attr(lambda m: m.get_device_properties(i)) for i in device_ids]
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/_utils.py", line 447, in _get_device_attr
+    return get_member(torch.cuda)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/_utils.py", line 464, in <lambda>
+    return [_get_device_attr(lambda m: m.get_device_properties(i)) for i in device_ids]
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/cuda/__init__.py", line 359, in get_device_properties
+    raise AssertionError("Invalid device id")
+AssertionError: Invalid device id
+srun: error: lava: task 0: Exited with exit code 1
+srun: Terminating StepId=49071.1
+Job ID: 49071
+Cluster: crimson
+User/Group: CS704G1/CS704G1
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:26
+CPU Efficiency: 14.44% of 00:03:00 core-walltime
+Job Wall-clock time: 00:00:45
+Memory Utilized: 2.66 GB
+Memory Efficiency: 16.62% of 16.00 GB

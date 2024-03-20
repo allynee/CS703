@@ -1,0 +1,33 @@
+You are allocated NVIDIA GeForce RTX 3090 on lava
+You are using GPU 3
+Loading CIFAR-FS dataset - phase train
+Traceback (most recent call last):
+  File "/common/home/projectgrps/CS704/CS704G1/MetaOptNet/data/CIFAR_FS.py", line 43, in load_data
+    with open(file, 'rb') as fo:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/cube/datasets/few-shot/CIFAR_FS/CIFAR_FS_train.pickle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 130, in <module>
+    (dataset_train, dataset_val, data_loader) = get_dataset(opt)
+  File "train.py", line 81, in get_dataset
+    dataset_train = CIFAR_FS(phase='train')
+  File "/common/home/projectgrps/CS704/CS704G1/MetaOptNet/data/CIFAR_FS.py", line 80, in __init__
+    data_train = load_data(file_train_categories_train_phase)
+  File "/common/home/projectgrps/CS704/CS704G1/MetaOptNet/data/CIFAR_FS.py", line 47, in load_data
+    with open(file, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/cube/datasets/few-shot/CIFAR_FS/CIFAR_FS_train.pickle'
+srun: error: lava: task 0: Exited with exit code 1
+srun: Terminating StepId=49073.1
+Job ID: 49073
+Cluster: crimson
+User/Group: CS704G1/CS704G1
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:03
+CPU Efficiency: 18.75% of 00:00:16 core-walltime
+Job Wall-clock time: 00:00:04
+Memory Utilized: 3.41 MB
+Memory Efficiency: 0.02% of 16.00 GB
