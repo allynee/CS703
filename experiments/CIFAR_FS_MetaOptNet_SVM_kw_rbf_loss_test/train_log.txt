@@ -1,0 +1,63 @@
+{'num_epoch': 2, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_kw_rbf_loss_test/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM_RBF', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+{'num_epoch': 2, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_kw_rbf_loss_test/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM_RBF', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+{'num_epoch': 2, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_kw_rbf_loss_test/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM_RBF', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+Train Epoch: 1	Batch: [100/1000]	Loss: 1.5357	Accuracy: 39.13 % (42.50 %)
+{'num_epoch': 2, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_kw_rbf_loss_test/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM_RBF', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+Train Epoch: 1	Batch: [100/1000]	Loss: 1.5430	Accuracy: 38.81 % (43.75 %)
+Train Epoch: 1	Batch: [200/1000]	Loss: 1.4947	Accuracy: 41.66 % (42.92 %)
+Train Epoch: 1	Batch: [300/1000]	Loss: 1.4397	Accuracy: 43.29 % (45.00 %)
+Train Epoch: 1	Batch: [400/1000]	Loss: 1.3076	Accuracy: 44.66 % (49.17 %)
+Train Epoch: 1	Batch: [500/1000]	Loss: 1.2564	Accuracy: 46.13 % (58.75 %)
+Train Epoch: 1	Batch: [600/1000]	Loss: 1.2354	Accuracy: 47.53 % (52.50 %)
+Train Epoch: 1	Batch: [700/1000]	Loss: 1.1799	Accuracy: 48.83 % (55.42 %)
+Train Epoch: 1	Batch: [800/1000]	Loss: 1.1027	Accuracy: 50.03 % (59.58 %)
+Train Epoch: 1	Batch: [900/1000]	Loss: 1.0805	Accuracy: 51.24 % (59.58 %)
+Train Epoch: 1	Batch: [1000/1000]	Loss: 1.0142	Accuracy: 52.45 % (68.75 %)
+Validation Epoch: 1			Loss: 1.1688	Accuracy: 54.13 ± 0.47 % (Best)
+Elapsed Time: 10m/20m
+
+Train Epoch: 2	Learning Rate: 0.1000
+Train Epoch: 2	Batch: [100/1000]	Loss: 0.9716	Accuracy: 65.06 % (61.67 %)
+Train Epoch: 2	Batch: [200/1000]	Loss: 0.9289	Accuracy: 65.88 % (70.00 %)
+Train Epoch: 2	Batch: [300/1000]	Loss: 0.8860	Accuracy: 66.98 % (67.50 %)
+Train Epoch: 2	Batch: [400/1000]	Loss: 0.9214	Accuracy: 67.62 % (62.92 %)
+Train Epoch: 2	Batch: [500/1000]	Loss: 0.8571	Accuracy: 68.32 % (71.67 %)
+Train Epoch: 2	Batch: [600/1000]	Loss: 0.7866	Accuracy: 69.01 % (72.08 %)
+Train Epoch: 2	Batch: [700/1000]	Loss: 0.6790	Accuracy: 69.55 % (77.92 %)
+Train Epoch: 2	Batch: [800/1000]	Loss: 0.9175	Accuracy: 70.16 % (68.75 %)
+Train Epoch: 2	Batch: [900/1000]	Loss: 0.7401	Accuracy: 70.76 % (73.33 %)
+Train Epoch: 2	Batch: [1000/1000]	Loss: 0.6633	Accuracy: 71.28 % (75.42 %)
+Validation Epoch: 2			Loss: 0.9585	Accuracy: 64.34 ± 0.46 % (Best)
+Elapsed Time: 20m/20m
+
+{'num_epoch': 2, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_kw_rbf_loss_test/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM_RBF', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+Train Epoch: 1	Batch: [100/1000]	Loss: 1.5448	Accuracy: 37.98 % (48.33 %)
+Train Epoch: 1	Batch: [200/1000]	Loss: 1.4799	Accuracy: 40.85 % (44.58 %)
+Train Epoch: 1	Batch: [300/1000]	Loss: 1.4233	Accuracy: 42.42 % (46.67 %)
+Train Epoch: 1	Batch: [400/1000]	Loss: 1.3728	Accuracy: 43.86 % (48.75 %)
+Train Epoch: 1	Batch: [500/1000]	Loss: 1.2610	Accuracy: 45.22 % (58.33 %)
+Train Epoch: 1	Batch: [600/1000]	Loss: 1.1689	Accuracy: 46.70 % (57.50 %)
+Train Epoch: 1	Batch: [700/1000]	Loss: 1.1462	Accuracy: 48.06 % (60.83 %)
+Train Epoch: 1	Batch: [800/1000]	Loss: 1.0550	Accuracy: 49.34 % (58.75 %)
+Train Epoch: 1	Batch: [900/1000]	Loss: 1.0488	Accuracy: 50.60 % (64.17 %)
+Train Epoch: 1	Batch: [1000/1000]	Loss: 0.9508	Accuracy: 51.87 % (64.58 %)
+Validation Epoch: 1			Loss: 1.1595	Accuracy: 54.95 ± 0.44 % (Best)
+Elapsed Time: 10m/20m
+
+Train Epoch: 2	Learning Rate: 0.1000
+Train Epoch: 2	Batch: [100/1000]	Loss: 0.9872	Accuracy: 64.46 % (61.67 %)
+Train Epoch: 2	Batch: [200/1000]	Loss: 0.8962	Accuracy: 65.84 % (67.92 %)
+Train Epoch: 2	Batch: [300/1000]	Loss: 0.8495	Accuracy: 66.77 % (68.33 %)
+Train Epoch: 2	Batch: [400/1000]	Loss: 0.8606	Accuracy: 67.52 % (66.67 %)
+Train Epoch: 2	Batch: [500/1000]	Loss: 0.9797	Accuracy: 68.20 % (66.67 %)
+Train Epoch: 2	Batch: [600/1000]	Loss: 1.0027	Accuracy: 68.95 % (62.08 %)
+Train Epoch: 2	Batch: [700/1000]	Loss: 0.6902	Accuracy: 69.66 % (80.00 %)
+Train Epoch: 2	Batch: [800/1000]	Loss: 0.7177	Accuracy: 70.18 % (75.00 %)
+Train Epoch: 2	Batch: [900/1000]	Loss: 0.9101	Accuracy: 70.80 % (68.75 %)
+Train Epoch: 2	Batch: [1000/1000]	Loss: 0.6807	Accuracy: 71.37 % (77.08 %)
+Validation Epoch: 2			Loss: 1.0094	Accuracy: 61.93 ± 0.44 % (Best)
+Elapsed Time: 19m/19m
+

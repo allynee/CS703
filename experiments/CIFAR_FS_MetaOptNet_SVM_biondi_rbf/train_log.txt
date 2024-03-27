@@ -1,0 +1,979 @@
+{'num_epoch': 3, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_biondi_rbf/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+{'num_epoch': 3, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_biondi_rbf/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+Train Epoch: 1	Batch: [100/1000]	Loss: 1.2268	Accuracy: 46.04 % (52.50 %)
+Train Epoch: 1	Batch: [200/1000]	Loss: 1.1844	Accuracy: 50.14 % (53.33 %)
+Train Epoch: 1	Batch: [300/1000]	Loss: 0.9960	Accuracy: 52.78 % (62.08 %)
+Train Epoch: 1	Batch: [400/1000]	Loss: 0.9175	Accuracy: 55.19 % (67.50 %)
+Train Epoch: 1	Batch: [500/1000]	Loss: 0.8920	Accuracy: 57.45 % (64.58 %)
+Train Epoch: 1	Batch: [600/1000]	Loss: 0.8227	Accuracy: 59.44 % (65.00 %)
+Train Epoch: 1	Batch: [700/1000]	Loss: 0.7224	Accuracy: 61.16 % (72.92 %)
+Train Epoch: 1	Batch: [800/1000]	Loss: 0.9044	Accuracy: 62.55 % (66.25 %)
+Train Epoch: 1	Batch: [900/1000]	Loss: 0.7846	Accuracy: 63.71 % (68.33 %)
+Train Epoch: 1	Batch: [1000/1000]	Loss: 0.7064	Accuracy: 64.89 % (73.75 %)
+Validation Epoch: 1			Loss: 0.8752	Accuracy: 67.65 ± 0.46 % (Best)
+Elapsed Time: 8m/23m
+
+Train Epoch: 2	Learning Rate: 0.1000
+Train Epoch: 2	Batch: [100/1000]	Loss: 0.6466	Accuracy: 76.18 % (75.83 %)
+Train Epoch: 2	Batch: [200/1000]	Loss: 0.5868	Accuracy: 76.57 % (78.33 %)
+Train Epoch: 2	Batch: [300/1000]	Loss: 0.5425	Accuracy: 76.89 % (80.83 %)
+Train Epoch: 2	Batch: [400/1000]	Loss: 0.6064	Accuracy: 77.33 % (79.17 %)
+Train Epoch: 2	Batch: [500/1000]	Loss: 0.5364	Accuracy: 77.67 % (80.00 %)
+Train Epoch: 2	Batch: [600/1000]	Loss: 0.5188	Accuracy: 77.97 % (82.50 %)
+Train Epoch: 2	Batch: [700/1000]	Loss: 0.5304	Accuracy: 78.28 % (82.50 %)
+Train Epoch: 2	Batch: [800/1000]	Loss: 0.5222	Accuracy: 78.56 % (77.92 %)
+Train Epoch: 2	Batch: [900/1000]	Loss: 0.4017	Accuracy: 78.89 % (87.50 %)
+Train Epoch: 2	Batch: [1000/1000]	Loss: 0.4798	Accuracy: 79.13 % (83.33 %)
+Validation Epoch: 2			Loss: 0.8562	Accuracy: 69.30 ± 0.44 % (Best)
+Elapsed Time: 16m/24m
+
+Train Epoch: 3	Learning Rate: 0.1000
+Train Epoch: 3	Batch: [100/1000]	Loss: 0.3979	Accuracy: 81.99 % (87.92 %)
+Train Epoch: 3	Batch: [200/1000]	Loss: 0.4803	Accuracy: 82.07 % (80.42 %)
+Train Epoch: 3	Batch: [300/1000]	Loss: 0.4296	Accuracy: 81.97 % (84.58 %)
+Train Epoch: 3	Batch: [400/1000]	Loss: 0.4034	Accuracy: 82.32 % (85.83 %)
+Train Epoch: 3	Batch: [500/1000]	Loss: 0.5059	Accuracy: 82.53 % (82.50 %)
+Train Epoch: 3	Batch: [600/1000]	Loss: 0.3405	Accuracy: 82.58 % (90.83 %)
+Train Epoch: 3	Batch: [700/1000]	Loss: 0.4739	Accuracy: 82.71 % (81.67 %)
+Train Epoch: 3	Batch: [800/1000]	Loss: 0.4575	Accuracy: 82.88 % (81.25 %)
+Train Epoch: 3	Batch: [900/1000]	Loss: 0.4610	Accuracy: 82.94 % (82.92 %)
+Train Epoch: 3	Batch: [1000/1000]	Loss: 0.4412	Accuracy: 83.06 % (83.75 %)
+Validation Epoch: 3			Loss: 0.8242	Accuracy: 70.97 ± 0.43 % (Best)
+Elapsed Time: 24m/24m
+
+{'num_epoch': 3, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_biondi_rbf/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+Train Epoch: 1	Batch: [100/1000]	Loss: 1.2490	Accuracy: 45.28 % (52.92 %)
+Train Epoch: 1	Batch: [200/1000]	Loss: 1.1071	Accuracy: 49.23 % (57.08 %)
+Train Epoch: 1	Batch: [300/1000]	Loss: 1.0886	Accuracy: 52.20 % (54.58 %)
+Train Epoch: 1	Batch: [400/1000]	Loss: 1.0443	Accuracy: 54.69 % (60.42 %)
+Train Epoch: 1	Batch: [500/1000]	Loss: 0.8838	Accuracy: 57.13 % (65.83 %)
+Train Epoch: 1	Batch: [600/1000]	Loss: 0.7200	Accuracy: 59.20 % (72.50 %)
+Train Epoch: 1	Batch: [700/1000]	Loss: 0.7404	Accuracy: 60.92 % (73.75 %)
+Train Epoch: 1	Batch: [800/1000]	Loss: 0.6996	Accuracy: 62.48 % (73.75 %)
+Train Epoch: 1	Batch: [900/1000]	Loss: 0.6247	Accuracy: 63.80 % (76.67 %)
+Train Epoch: 1	Batch: [1000/1000]	Loss: 0.7038	Accuracy: 64.97 % (76.25 %)
+Validation Epoch: 1			Loss: 0.8750	Accuracy: 67.76 ± 0.43 % (Best)
+Elapsed Time: 8m/24m
+
+Train Epoch: 2	Learning Rate: 0.1000
+Train Epoch: 2	Batch: [100/1000]	Loss: 0.6315	Accuracy: 76.98 % (77.92 %)
+Train Epoch: 2	Batch: [200/1000]	Loss: 0.6561	Accuracy: 77.04 % (75.42 %)
+Train Epoch: 2	Batch: [300/1000]	Loss: 0.5268	Accuracy: 77.41 % (82.92 %)
+Train Epoch: 2	Batch: [400/1000]	Loss: 0.5272	Accuracy: 77.73 % (79.58 %)
+Train Epoch: 2	Batch: [500/1000]	Loss: 0.6567	Accuracy: 78.12 % (74.58 %)
+Train Epoch: 2	Batch: [600/1000]	Loss: 0.3621	Accuracy: 78.45 % (89.17 %)
+Train Epoch: 2	Batch: [700/1000]	Loss: 0.5299	Accuracy: 78.76 % (82.08 %)
+Train Epoch: 2	Batch: [800/1000]	Loss: 0.5363	Accuracy: 79.03 % (81.67 %)
+Train Epoch: 2	Batch: [900/1000]	Loss: 0.4681	Accuracy: 79.24 % (82.50 %)
+Train Epoch: 2	Batch: [1000/1000]	Loss: 0.6158	Accuracy: 79.50 % (77.92 %)
+Validation Epoch: 2			Loss: 0.8102	Accuracy: 70.85 ± 0.43 % (Best)
+Elapsed Time: 16m/24m
+
+Train Epoch: 3	Learning Rate: 0.1000
+Train Epoch: 3	Batch: [100/1000]	Loss: 0.4277	Accuracy: 82.23 % (86.25 %)
+Train Epoch: 3	Batch: [200/1000]	Loss: 0.5361	Accuracy: 82.43 % (81.67 %)
+Train Epoch: 3	Batch: [300/1000]	Loss: 0.5175	Accuracy: 82.47 % (79.17 %)
+Train Epoch: 3	Batch: [400/1000]	Loss: 0.4620	Accuracy: 82.41 % (85.42 %)
+Train Epoch: 3	Batch: [500/1000]	Loss: 0.4401	Accuracy: 82.50 % (84.58 %)
+Train Epoch: 3	Batch: [600/1000]	Loss: 0.4859	Accuracy: 82.56 % (83.33 %)
+Train Epoch: 3	Batch: [700/1000]	Loss: 0.5471	Accuracy: 82.68 % (78.75 %)
+Train Epoch: 3	Batch: [800/1000]	Loss: 0.4153	Accuracy: 82.79 % (87.92 %)
+Train Epoch: 3	Batch: [900/1000]	Loss: 0.4876	Accuracy: 82.91 % (82.92 %)
+Train Epoch: 3	Batch: [1000/1000]	Loss: 0.3993	Accuracy: 83.06 % (86.67 %)
+Validation Epoch: 3			Loss: 0.8240	Accuracy: 70.94 ± 0.44 % (Best)
+Elapsed Time: 24m/24m
+
+{'num_epoch': 3, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_biondi_rbf/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM_RBF', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+{'num_epoch': 3, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_biondi_rbf/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM_RBF', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+{'num_epoch': 3, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_biondi_rbf/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM_RBF', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+{'num_epoch': 3, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_biondi_rbf/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM_RBF', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+Train Epoch: 1	Batch: [100/1000]	Loss: 1.5688	Accuracy: 39.78 % (40.00 %)
+Train Epoch: 1	Batch: [200/1000]	Loss: 1.4795	Accuracy: 42.22 % (45.00 %)
+Train Epoch: 1	Batch: [300/1000]	Loss: 1.3457	Accuracy: 44.14 % (49.58 %)
+Train Epoch: 1	Batch: [400/1000]	Loss: 1.3214	Accuracy: 45.89 % (47.92 %)
+Train Epoch: 1	Batch: [500/1000]	Loss: 1.0830	Accuracy: 47.82 % (65.42 %)
+Train Epoch: 1	Batch: [600/1000]	Loss: 1.0884	Accuracy: 49.81 % (56.67 %)
+Train Epoch: 1	Batch: [700/1000]	Loss: 0.9132	Accuracy: 51.64 % (67.08 %)
+Train Epoch: 1	Batch: [800/1000]	Loss: 0.9584	Accuracy: 53.56 % (63.75 %)
+Train Epoch: 1	Batch: [900/1000]	Loss: 0.8049	Accuracy: 55.27 % (72.92 %)
+Train Epoch: 1	Batch: [1000/1000]	Loss: 0.9033	Accuracy: 56.90 % (66.67 %)
+Validation Epoch: 1			Loss: 1.0186	Accuracy: 62.64 ± 0.43 % (Best)
+Elapsed Time: 10m/29m
+
+Train Epoch: 2	Learning Rate: 0.1000
+Train Epoch: 2	Batch: [100/1000]	Loss: 0.7193	Accuracy: 72.85 % (72.50 %)
+Train Epoch: 2	Batch: [200/1000]	Loss: 0.7177	Accuracy: 73.50 % (72.92 %)
+Train Epoch: 2	Batch: [300/1000]	Loss: 0.7150	Accuracy: 74.37 % (76.67 %)
+Train Epoch: 2	Batch: [400/1000]	Loss: 0.7857	Accuracy: 75.03 % (68.75 %)
+Train Epoch: 2	Batch: [500/1000]	Loss: 0.6614	Accuracy: 75.52 % (78.33 %)
+Train Epoch: 2	Batch: [600/1000]	Loss: 0.5865	Accuracy: 76.18 % (76.67 %)
+Train Epoch: 2	Batch: [700/1000]	Loss: 0.5312	Accuracy: 76.69 % (82.50 %)
+Train Epoch: 2	Batch: [800/1000]	Loss: 0.6160	Accuracy: 77.18 % (82.92 %)
+Train Epoch: 2	Batch: [900/1000]	Loss: 0.4141	Accuracy: 77.70 % (88.75 %)
+Train Epoch: 2	Batch: [1000/1000]	Loss: 0.5160	Accuracy: 78.12 % (81.67 %)
+Validation Epoch: 2			Loss: 0.8530	Accuracy: 69.22 ± 0.43 % (Best)
+Elapsed Time: 20m/30m
+
+Train Epoch: 3	Learning Rate: 0.1000
+Train Epoch: 3	Batch: [100/1000]	Loss: 0.6668	Accuracy: 82.73 % (75.83 %)
+Train Epoch: 3	Batch: [200/1000]	Loss: 0.5779	Accuracy: 82.90 % (82.08 %)
+Train Epoch: 3	Batch: [300/1000]	Loss: 0.4582	Accuracy: 83.18 % (84.58 %)
+Train Epoch: 3	Batch: [400/1000]	Loss: 0.3963	Accuracy: 83.57 % (86.67 %)
+Train Epoch: 3	Batch: [500/1000]	Loss: 0.4575	Accuracy: 83.86 % (85.42 %)
+Train Epoch: 3	Batch: [600/1000]	Loss: 0.4517	Accuracy: 84.05 % (87.50 %)
+Train Epoch: 3	Batch: [700/1000]	Loss: 0.3927	Accuracy: 84.28 % (87.50 %)
+Train Epoch: 3	Batch: [800/1000]	Loss: 0.4121	Accuracy: 84.57 % (87.92 %)
+Train Epoch: 3	Batch: [900/1000]	Loss: 0.5339	Accuracy: 84.72 % (78.33 %)
+Train Epoch: 3	Batch: [1000/1000]	Loss: 0.4136	Accuracy: 84.80 % (86.67 %)
+Validation Epoch: 3			Loss: 0.8560	Accuracy: 68.95 ± 0.42 %
+Elapsed Time: 30m/30m
+
+{'num_epoch': 30, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_biondi_rbf/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM_RBF', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+Train Epoch: 1	Batch: [100/1000]	Loss: 1.5507	Accuracy: 39.74 % (44.58 %)
+Train Epoch: 1	Batch: [200/1000]	Loss: 1.4143	Accuracy: 42.47 % (53.33 %)
+Train Epoch: 1	Batch: [300/1000]	Loss: 1.3901	Accuracy: 44.04 % (48.33 %)
+Train Epoch: 1	Batch: [400/1000]	Loss: 1.2798	Accuracy: 45.78 % (55.42 %)
+Train Epoch: 1	Batch: [500/1000]	Loss: 1.1859	Accuracy: 47.81 % (59.58 %)
+Train Epoch: 1	Batch: [600/1000]	Loss: 1.1638	Accuracy: 49.73 % (58.33 %)
+Train Epoch: 1	Batch: [700/1000]	Loss: 1.0736	Accuracy: 51.67 % (61.25 %)
+Train Epoch: 1	Batch: [800/1000]	Loss: 0.9806	Accuracy: 53.48 % (63.75 %)
+Train Epoch: 1	Batch: [900/1000]	Loss: 0.9269	Accuracy: 55.20 % (67.92 %)
+Train Epoch: 1	Batch: [1000/1000]	Loss: 0.8609	Accuracy: 56.83 % (72.08 %)
+Validation Epoch: 1			Loss: 1.0290	Accuracy: 62.13 ± 0.43 % (Best)
+Elapsed Time: 9m/4.4h
+
+Train Epoch: 2	Learning Rate: 0.1000
+Train Epoch: 2	Batch: [100/1000]	Loss: 0.7870	Accuracy: 72.89 % (78.33 %)
+Train Epoch: 2	Batch: [200/1000]	Loss: 0.5815	Accuracy: 73.83 % (83.33 %)
+Train Epoch: 2	Batch: [300/1000]	Loss: 0.6600	Accuracy: 74.45 % (79.17 %)
+Train Epoch: 2	Batch: [400/1000]	Loss: 0.6551	Accuracy: 75.09 % (78.75 %)
+Train Epoch: 2	Batch: [500/1000]	Loss: 0.6257	Accuracy: 75.85 % (78.33 %)
+Train Epoch: 2	Batch: [600/1000]	Loss: 0.6424	Accuracy: 76.41 % (77.92 %)
+Train Epoch: 2	Batch: [700/1000]	Loss: 0.5833	Accuracy: 76.86 % (78.33 %)
+Train Epoch: 2	Batch: [800/1000]	Loss: 0.5425	Accuracy: 77.38 % (80.42 %)
+Train Epoch: 2	Batch: [900/1000]	Loss: 0.6176	Accuracy: 77.85 % (76.25 %)
+Train Epoch: 2	Batch: [1000/1000]	Loss: 0.4500	Accuracy: 78.30 % (84.17 %)
+Validation Epoch: 2			Loss: 0.8968	Accuracy: 67.25 ± 0.43 % (Best)
+Elapsed Time: 18m/4.4h
+
+Train Epoch: 3	Learning Rate: 0.1000
+Train Epoch: 3	Batch: [100/1000]	Loss: 0.5294	Accuracy: 82.50 % (81.67 %)
+Train Epoch: 3	Batch: [200/1000]	Loss: 0.5414	Accuracy: 82.87 % (83.33 %)
+Train Epoch: 3	Batch: [300/1000]	Loss: 0.5806	Accuracy: 83.16 % (78.75 %)
+Train Epoch: 3	Batch: [400/1000]	Loss: 0.4654	Accuracy: 83.29 % (86.67 %)
+Train Epoch: 3	Batch: [500/1000]	Loss: 0.4250	Accuracy: 83.53 % (87.50 %)
+Train Epoch: 3	Batch: [600/1000]	Loss: 0.5435	Accuracy: 83.70 % (82.08 %)
+Train Epoch: 3	Batch: [700/1000]	Loss: 0.4910	Accuracy: 83.93 % (84.17 %)
+Train Epoch: 3	Batch: [800/1000]	Loss: 0.4994	Accuracy: 84.13 % (80.83 %)
+Train Epoch: 3	Batch: [900/1000]	Loss: 0.4286	Accuracy: 84.33 % (87.50 %)
+Train Epoch: 3	Batch: [1000/1000]	Loss: 0.3881	Accuracy: 84.51 % (88.33 %)
+Validation Epoch: 3			Loss: 0.9013	Accuracy: 67.06 ± 0.43 %
+Elapsed Time: 26m/4.4h
+
+Train Epoch: 4	Learning Rate: 0.1000
+Train Epoch: 4	Batch: [100/1000]	Loss: 0.5266	Accuracy: 87.04 % (83.75 %)
+Train Epoch: 4	Batch: [200/1000]	Loss: 0.4783	Accuracy: 86.95 % (84.58 %)
+Train Epoch: 4	Batch: [300/1000]	Loss: 0.3226	Accuracy: 87.01 % (89.58 %)
+Train Epoch: 4	Batch: [400/1000]	Loss: 0.3292	Accuracy: 87.07 % (91.25 %)
+Train Epoch: 4	Batch: [500/1000]	Loss: 0.3944	Accuracy: 87.24 % (88.75 %)
+Train Epoch: 4	Batch: [600/1000]	Loss: 0.4263	Accuracy: 87.30 % (87.50 %)
+Train Epoch: 4	Batch: [700/1000]	Loss: 0.3059	Accuracy: 87.35 % (89.58 %)
+Train Epoch: 4	Batch: [800/1000]	Loss: 0.3956	Accuracy: 87.39 % (86.25 %)
+Train Epoch: 4	Batch: [900/1000]	Loss: 0.3438	Accuracy: 87.49 % (90.00 %)
+Train Epoch: 4	Batch: [1000/1000]	Loss: 0.3790	Accuracy: 87.55 % (89.17 %)
+Validation Epoch: 4			Loss: 0.8477	Accuracy: 69.18 ± 0.43 % (Best)
+Elapsed Time: 35m/4.4h
+
+Train Epoch: 5	Learning Rate: 0.1000
+Train Epoch: 5	Batch: [100/1000]	Loss: 0.3169	Accuracy: 88.28 % (90.83 %)
+Train Epoch: 5	Batch: [200/1000]	Loss: 0.4004	Accuracy: 88.34 % (86.67 %)
+Train Epoch: 5	Batch: [300/1000]	Loss: 0.2936	Accuracy: 88.40 % (92.92 %)
+Train Epoch: 5	Batch: [400/1000]	Loss: 0.2958	Accuracy: 88.52 % (92.08 %)
+Train Epoch: 5	Batch: [500/1000]	Loss: 0.3445	Accuracy: 88.57 % (89.58 %)
+Train Epoch: 5	Batch: [600/1000]	Loss: 0.2500	Accuracy: 88.61 % (94.17 %)
+Train Epoch: 5	Batch: [700/1000]	Loss: 0.3736	Accuracy: 88.72 % (89.17 %)
+Train Epoch: 5	Batch: [800/1000]	Loss: 0.2951	Accuracy: 88.76 % (92.92 %)
+Train Epoch: 5	Batch: [900/1000]	Loss: 0.3426	Accuracy: 88.87 % (87.50 %)
+Train Epoch: 5	Batch: [1000/1000]	Loss: 0.3080	Accuracy: 88.85 % (92.50 %)
+Validation Epoch: 5			Loss: 0.8542	Accuracy: 69.60 ± 0.42 % (Best)
+Elapsed Time: 44m/4.4h
+
+Train Epoch: 6	Learning Rate: 0.1000
+Train Epoch: 6	Batch: [100/1000]	Loss: 0.3888	Accuracy: 89.58 % (85.00 %)
+Train Epoch: 6	Batch: [200/1000]	Loss: 0.3980	Accuracy: 89.56 % (86.25 %)
+Train Epoch: 6	Batch: [300/1000]	Loss: 0.4390	Accuracy: 89.71 % (87.92 %)
+Train Epoch: 6	Batch: [400/1000]	Loss: 0.3586	Accuracy: 89.77 % (90.42 %)
+Train Epoch: 6	Batch: [500/1000]	Loss: 0.3401	Accuracy: 89.68 % (89.17 %)
+Train Epoch: 6	Batch: [600/1000]	Loss: 0.4077	Accuracy: 89.69 % (85.83 %)
+Train Epoch: 6	Batch: [700/1000]	Loss: 0.4028	Accuracy: 89.70 % (87.92 %)
+Train Epoch: 6	Batch: [800/1000]	Loss: 0.3469	Accuracy: 89.75 % (92.08 %)
+Train Epoch: 6	Batch: [900/1000]	Loss: 0.3000	Accuracy: 89.82 % (91.67 %)
+Train Epoch: 6	Batch: [1000/1000]	Loss: 0.2908	Accuracy: 89.85 % (91.67 %)
+Validation Epoch: 6			Loss: 0.8761	Accuracy: 67.91 ± 0.45 %
+Elapsed Time: 52m/4.4h
+
+Train Epoch: 7	Learning Rate: 0.1000
+Train Epoch: 7	Batch: [100/1000]	Loss: 0.2900	Accuracy: 89.87 % (92.08 %)
+Train Epoch: 7	Batch: [200/1000]	Loss: 0.3965	Accuracy: 89.90 % (89.58 %)
+Train Epoch: 7	Batch: [300/1000]	Loss: 0.4612	Accuracy: 90.16 % (85.00 %)
+Train Epoch: 7	Batch: [400/1000]	Loss: 0.2780	Accuracy: 90.23 % (91.67 %)
+Train Epoch: 7	Batch: [500/1000]	Loss: 0.2825	Accuracy: 90.34 % (91.67 %)
+Train Epoch: 7	Batch: [600/1000]	Loss: 0.3709	Accuracy: 90.37 % (86.67 %)
+Train Epoch: 7	Batch: [700/1000]	Loss: 0.3851	Accuracy: 90.41 % (85.83 %)
+Train Epoch: 7	Batch: [800/1000]	Loss: 0.2728	Accuracy: 90.49 % (92.92 %)
+Train Epoch: 7	Batch: [900/1000]	Loss: 0.2802	Accuracy: 90.54 % (92.92 %)
+Train Epoch: 7	Batch: [1000/1000]	Loss: 0.3218	Accuracy: 90.57 % (91.67 %)
+Validation Epoch: 7			Loss: 0.8648	Accuracy: 68.29 ± 0.47 %
+Elapsed Time: 1.0h/4.4h
+
+Train Epoch: 8	Learning Rate: 0.1000
+Train Epoch: 8	Batch: [100/1000]	Loss: 0.2821	Accuracy: 91.00 % (92.92 %)
+Train Epoch: 8	Batch: [200/1000]	Loss: 0.2781	Accuracy: 90.97 % (92.08 %)
+Train Epoch: 8	Batch: [300/1000]	Loss: 0.3541	Accuracy: 90.95 % (87.50 %)
+Train Epoch: 8	Batch: [400/1000]	Loss: 0.3172	Accuracy: 91.03 % (89.58 %)
+Train Epoch: 8	Batch: [500/1000]	Loss: 0.1624	Accuracy: 91.10 % (95.83 %)
+Train Epoch: 8	Batch: [600/1000]	Loss: 0.2439	Accuracy: 91.14 % (93.33 %)
+Train Epoch: 8	Batch: [700/1000]	Loss: 0.3304	Accuracy: 91.13 % (92.92 %)
+Train Epoch: 8	Batch: [800/1000]	Loss: 0.2891	Accuracy: 91.13 % (92.50 %)
+Train Epoch: 8	Batch: [900/1000]	Loss: 0.2478	Accuracy: 91.17 % (95.42 %)
+Train Epoch: 8	Batch: [1000/1000]	Loss: 0.3866	Accuracy: 91.18 % (87.92 %)
+Validation Epoch: 8			Loss: 0.8561	Accuracy: 69.10 ± 0.43 %
+Elapsed Time: 1.2h/4.4h
+
+Train Epoch: 9	Learning Rate: 0.1000
+Train Epoch: 9	Batch: [100/1000]	Loss: 0.3878	Accuracy: 91.46 % (87.50 %)
+Train Epoch: 9	Batch: [200/1000]	Loss: 0.2823	Accuracy: 91.45 % (92.92 %)
+Train Epoch: 9	Batch: [300/1000]	Loss: 0.3409	Accuracy: 91.45 % (91.25 %)
+Train Epoch: 9	Batch: [400/1000]	Loss: 0.3286	Accuracy: 91.47 % (88.75 %)
+Train Epoch: 9	Batch: [500/1000]	Loss: 0.2589	Accuracy: 91.50 % (92.92 %)
+Train Epoch: 9	Batch: [600/1000]	Loss: 0.3351	Accuracy: 91.48 % (92.50 %)
+Train Epoch: 9	Batch: [700/1000]	Loss: 0.3080	Accuracy: 91.45 % (90.00 %)
+Train Epoch: 9	Batch: [800/1000]	Loss: 0.2705	Accuracy: 91.47 % (93.75 %)
+Train Epoch: 9	Batch: [900/1000]	Loss: 0.3151	Accuracy: 91.50 % (90.42 %)
+Train Epoch: 9	Batch: [1000/1000]	Loss: 0.3048	Accuracy: 91.48 % (89.58 %)
+Validation Epoch: 9			Loss: 0.8744	Accuracy: 68.63 ± 0.42 %
+Elapsed Time: 1.3h/4.3h
+
+Train Epoch: 10	Learning Rate: 0.1000
+Train Epoch: 10	Batch: [100/1000]	Loss: 0.2872	Accuracy: 91.97 % (92.08 %)
+Train Epoch: 10	Batch: [200/1000]	Loss: 0.3502	Accuracy: 91.91 % (88.33 %)
+Train Epoch: 10	Batch: [300/1000]	Loss: 0.3262	Accuracy: 91.92 % (91.25 %)
+Train Epoch: 10	Batch: [400/1000]	Loss: 0.3422	Accuracy: 91.91 % (90.42 %)
+Train Epoch: 10	Batch: [500/1000]	Loss: 0.3128	Accuracy: 91.90 % (89.58 %)
+Train Epoch: 10	Batch: [600/1000]	Loss: 0.2005	Accuracy: 91.86 % (95.00 %)
+Train Epoch: 10	Batch: [700/1000]	Loss: 0.3284	Accuracy: 91.86 % (91.25 %)
+Train Epoch: 10	Batch: [800/1000]	Loss: 0.4680	Accuracy: 91.87 % (84.58 %)
+Train Epoch: 10	Batch: [900/1000]	Loss: 0.2647	Accuracy: 91.90 % (94.17 %)
+Train Epoch: 10	Batch: [1000/1000]	Loss: 0.2391	Accuracy: 91.91 % (94.58 %)
+Validation Epoch: 10			Loss: 0.9143	Accuracy: 67.02 ± 0.41 %
+Elapsed Time: 1.4h/4.3h
+
+Train Epoch: 11	Learning Rate: 0.1000
+Train Epoch: 11	Batch: [100/1000]	Loss: 0.2719	Accuracy: 91.88 % (92.50 %)
+Train Epoch: 11	Batch: [200/1000]	Loss: 0.2523	Accuracy: 91.98 % (92.50 %)
+Train Epoch: 11	Batch: [300/1000]	Loss: 0.3083	Accuracy: 91.96 % (92.08 %)
+Train Epoch: 11	Batch: [400/1000]	Loss: 0.2315	Accuracy: 92.06 % (92.92 %)
+Train Epoch: 11	Batch: [500/1000]	Loss: 0.2146	Accuracy: 92.14 % (93.75 %)
+Train Epoch: 11	Batch: [600/1000]	Loss: 0.2314	Accuracy: 92.18 % (93.33 %)
+Train Epoch: 11	Batch: [700/1000]	Loss: 0.2877	Accuracy: 92.21 % (92.50 %)
+Train Epoch: 11	Batch: [800/1000]	Loss: 0.2996	Accuracy: 92.18 % (88.33 %)
+Train Epoch: 11	Batch: [900/1000]	Loss: 0.2293	Accuracy: 92.15 % (94.17 %)
+Train Epoch: 11	Batch: [1000/1000]	Loss: 0.2465	Accuracy: 92.15 % (92.92 %)
+Validation Epoch: 11			Loss: 0.8673	Accuracy: 68.88 ± 0.43 %
+Elapsed Time: 1.6h/4.3h
+
+Train Epoch: 12	Learning Rate: 0.1000
+Train Epoch: 12	Batch: [100/1000]	Loss: 0.3927	Accuracy: 91.94 % (88.33 %)
+Train Epoch: 12	Batch: [200/1000]	Loss: 0.2102	Accuracy: 92.25 % (95.83 %)
+Train Epoch: 12	Batch: [300/1000]	Loss: 0.2132	Accuracy: 92.28 % (95.00 %)
+Train Epoch: 12	Batch: [400/1000]	Loss: 0.1548	Accuracy: 92.23 % (96.67 %)
+Train Epoch: 12	Batch: [500/1000]	Loss: 0.2882	Accuracy: 92.20 % (92.08 %)
+Train Epoch: 12	Batch: [600/1000]	Loss: 0.2363	Accuracy: 92.20 % (94.58 %)
+Train Epoch: 12	Batch: [700/1000]	Loss: 0.3412	Accuracy: 92.24 % (90.00 %)
+Train Epoch: 12	Batch: [800/1000]	Loss: 0.2000	Accuracy: 92.24 % (96.25 %)
+Train Epoch: 12	Batch: [900/1000]	Loss: 0.2569	Accuracy: 92.25 % (94.17 %)
+Train Epoch: 12	Batch: [1000/1000]	Loss: 0.2145	Accuracy: 92.26 % (95.00 %)
+Validation Epoch: 12			Loss: 0.8444	Accuracy: 70.11 ± 0.43 % (Best)
+Elapsed Time: 1.7h/4.3h
+
+Train Epoch: 13	Learning Rate: 0.1000
+Train Epoch: 13	Batch: [100/1000]	Loss: 0.2021	Accuracy: 92.56 % (93.75 %)
+Train Epoch: 13	Batch: [200/1000]	Loss: 0.2599	Accuracy: 92.59 % (92.08 %)
+Train Epoch: 13	Batch: [300/1000]	Loss: 0.2936	Accuracy: 92.52 % (91.25 %)
+Train Epoch: 13	Batch: [400/1000]	Loss: 0.1933	Accuracy: 92.46 % (96.25 %)
+Train Epoch: 13	Batch: [500/1000]	Loss: 0.2381	Accuracy: 92.58 % (93.75 %)
+Train Epoch: 13	Batch: [600/1000]	Loss: 0.2499	Accuracy: 92.61 % (93.33 %)
+Train Epoch: 13	Batch: [700/1000]	Loss: 0.2950	Accuracy: 92.54 % (90.00 %)
+Train Epoch: 13	Batch: [800/1000]	Loss: 0.3005	Accuracy: 92.54 % (89.58 %)
+Train Epoch: 13	Batch: [900/1000]	Loss: 0.1884	Accuracy: 92.52 % (96.25 %)
+Train Epoch: 13	Batch: [1000/1000]	Loss: 0.1558	Accuracy: 92.51 % (97.92 %)
+Validation Epoch: 13			Loss: 0.8377	Accuracy: 70.03 ± 0.44 %
+Elapsed Time: 1.9h/4.3h
+
+Train Epoch: 14	Learning Rate: 0.1000
+Train Epoch: 14	Batch: [100/1000]	Loss: 0.3082	Accuracy: 92.08 % (91.67 %)
+Train Epoch: 14	Batch: [200/1000]	Loss: 0.2000	Accuracy: 92.15 % (94.58 %)
+Train Epoch: 14	Batch: [300/1000]	Loss: 0.2700	Accuracy: 92.19 % (95.00 %)
+Train Epoch: 14	Batch: [400/1000]	Loss: 0.2181	Accuracy: 92.34 % (93.33 %)
+Train Epoch: 14	Batch: [500/1000]	Loss: 0.2057	Accuracy: 92.43 % (97.08 %)
+Train Epoch: 14	Batch: [600/1000]	Loss: 0.2760	Accuracy: 92.47 % (92.50 %)
+Train Epoch: 14	Batch: [700/1000]	Loss: 0.2597	Accuracy: 92.51 % (94.58 %)
+Train Epoch: 14	Batch: [800/1000]	Loss: 0.3198	Accuracy: 92.45 % (87.92 %)
+Train Epoch: 14	Batch: [900/1000]	Loss: 0.2954	Accuracy: 92.44 % (92.08 %)
+Train Epoch: 14	Batch: [1000/1000]	Loss: 0.3022	Accuracy: 92.48 % (92.50 %)
+Validation Epoch: 14			Loss: 0.8854	Accuracy: 67.79 ± 0.45 %
+Elapsed Time: 2.0h/4.3h
+
+Train Epoch: 15	Learning Rate: 0.1000
+Train Epoch: 15	Batch: [100/1000]	Loss: 0.2551	Accuracy: 92.71 % (92.92 %)
+Train Epoch: 15	Batch: [200/1000]	Loss: 0.3487	Accuracy: 92.45 % (90.83 %)
+Train Epoch: 15	Batch: [300/1000]	Loss: 0.2783	Accuracy: 92.58 % (91.67 %)
+Train Epoch: 15	Batch: [400/1000]	Loss: 0.3223	Accuracy: 92.65 % (92.50 %)
+Train Epoch: 15	Batch: [500/1000]	Loss: 0.2986	Accuracy: 92.66 % (94.58 %)
+Train Epoch: 15	Batch: [600/1000]	Loss: 0.2168	Accuracy: 92.71 % (93.75 %)
+Train Epoch: 15	Batch: [700/1000]	Loss: 0.3902	Accuracy: 92.73 % (89.58 %)
+Train Epoch: 15	Batch: [800/1000]	Loss: 0.2534	Accuracy: 92.74 % (90.83 %)
+Train Epoch: 15	Batch: [900/1000]	Loss: 0.2159	Accuracy: 92.76 % (95.42 %)
+Train Epoch: 15	Batch: [1000/1000]	Loss: 0.3405	Accuracy: 92.71 % (91.25 %)
+Validation Epoch: 15			Loss: 0.8257	Accuracy: 70.74 ± 0.43 % (Best)
+Elapsed Time: 2.1h/4.3h
+
+Train Epoch: 16	Learning Rate: 0.1000
+Train Epoch: 16	Batch: [100/1000]	Loss: 0.2578	Accuracy: 92.60 % (92.08 %)
+Train Epoch: 16	Batch: [200/1000]	Loss: 0.2556	Accuracy: 92.89 % (94.58 %)
+Train Epoch: 16	Batch: [300/1000]	Loss: 0.2347	Accuracy: 92.93 % (95.00 %)
+Train Epoch: 16	Batch: [400/1000]	Loss: 0.2251	Accuracy: 92.95 % (93.75 %)
+Train Epoch: 16	Batch: [500/1000]	Loss: 0.2915	Accuracy: 92.87 % (92.08 %)
+Train Epoch: 16	Batch: [600/1000]	Loss: 0.2461	Accuracy: 92.85 % (93.75 %)
+Train Epoch: 16	Batch: [700/1000]	Loss: 0.2556	Accuracy: 92.91 % (93.33 %)
+Train Epoch: 16	Batch: [800/1000]	Loss: 0.2720	Accuracy: 92.94 % (93.33 %)
+Train Epoch: 16	Batch: [900/1000]	Loss: 0.1953	Accuracy: 92.96 % (95.42 %)
+Train Epoch: 16	Batch: [1000/1000]	Loss: 0.1437	Accuracy: 93.00 % (96.25 %)
+Validation Epoch: 16			Loss: 0.8512	Accuracy: 69.86 ± 0.44 %
+Elapsed Time: 2.3h/4.3h
+
+Train Epoch: 17	Learning Rate: 0.1000
+Train Epoch: 17	Batch: [100/1000]	Loss: 0.3229	Accuracy: 92.59 % (90.83 %)
+Train Epoch: 17	Batch: [200/1000]	Loss: 0.3596	Accuracy: 92.55 % (89.58 %)
+Train Epoch: 17	Batch: [300/1000]	Loss: 0.2314	Accuracy: 92.75 % (92.92 %)
+Train Epoch: 17	Batch: [400/1000]	Loss: 0.2833	Accuracy: 92.83 % (94.17 %)
+Train Epoch: 17	Batch: [500/1000]	Loss: 0.2263	Accuracy: 92.90 % (92.50 %)
+Train Epoch: 17	Batch: [600/1000]	Loss: 0.2135	Accuracy: 92.91 % (92.92 %)
+Train Epoch: 17	Batch: [700/1000]	Loss: 0.3039	Accuracy: 92.93 % (89.58 %)
+Train Epoch: 17	Batch: [800/1000]	Loss: 0.2525	Accuracy: 92.99 % (95.42 %)
+Train Epoch: 17	Batch: [900/1000]	Loss: 0.1643	Accuracy: 93.02 % (95.83 %)
+Train Epoch: 17	Batch: [1000/1000]	Loss: 0.2763	Accuracy: 93.02 % (92.50 %)
+Validation Epoch: 17			Loss: 0.8633	Accuracy: 69.14 ± 0.43 %
+Elapsed Time: 2.4h/4.3h
+
+Train Epoch: 18	Learning Rate: 0.1000
+Train Epoch: 18	Batch: [100/1000]	Loss: 0.2400	Accuracy: 92.92 % (93.33 %)
+Train Epoch: 18	Batch: [200/1000]	Loss: 0.3386	Accuracy: 93.13 % (90.00 %)
+Train Epoch: 18	Batch: [300/1000]	Loss: 0.3163	Accuracy: 93.03 % (91.67 %)
+Train Epoch: 18	Batch: [400/1000]	Loss: 0.2194	Accuracy: 92.99 % (94.58 %)
+Train Epoch: 18	Batch: [500/1000]	Loss: 0.2787	Accuracy: 93.06 % (93.75 %)
+Train Epoch: 18	Batch: [600/1000]	Loss: 0.2113	Accuracy: 93.00 % (94.17 %)
+Train Epoch: 18	Batch: [700/1000]	Loss: 0.2246	Accuracy: 93.02 % (94.58 %)
+Train Epoch: 18	Batch: [800/1000]	Loss: 0.2313	Accuracy: 93.06 % (95.00 %)
+Train Epoch: 18	Batch: [900/1000]	Loss: 0.2554	Accuracy: 93.07 % (93.33 %)
+Train Epoch: 18	Batch: [1000/1000]	Loss: 0.3559	Accuracy: 93.02 % (89.58 %)
+Validation Epoch: 18			Loss: 0.8964	Accuracy: 67.87 ± 0.45 %
+Elapsed Time: 2.6h/4.3h
+
+Train Epoch: 19	Learning Rate: 0.1000
+Train Epoch: 19	Batch: [100/1000]	Loss: 0.2749	Accuracy: 93.20 % (93.75 %)
+Train Epoch: 19	Batch: [200/1000]	Loss: 0.2602	Accuracy: 92.94 % (92.92 %)
+Train Epoch: 19	Batch: [300/1000]	Loss: 0.1740	Accuracy: 92.94 % (94.17 %)
+Train Epoch: 19	Batch: [400/1000]	Loss: 0.3368	Accuracy: 92.94 % (88.33 %)
+Train Epoch: 19	Batch: [500/1000]	Loss: 0.3014	Accuracy: 93.04 % (92.92 %)
+Train Epoch: 19	Batch: [600/1000]	Loss: 0.2903	Accuracy: 92.96 % (92.50 %)
+Train Epoch: 19	Batch: [700/1000]	Loss: 0.1924	Accuracy: 92.98 % (95.83 %)
+Train Epoch: 19	Batch: [800/1000]	Loss: 0.2926	Accuracy: 93.01 % (91.25 %)
+Train Epoch: 19	Batch: [900/1000]	Loss: 0.1839	Accuracy: 93.05 % (95.42 %)
+Train Epoch: 19	Batch: [1000/1000]	Loss: 0.2763	Accuracy: 93.05 % (94.17 %)
+Validation Epoch: 19			Loss: 0.8170	Accuracy: 70.82 ± 0.42 % (Best)
+Elapsed Time: 2.7h/4.3h
+
+Train Epoch: 20	Learning Rate: 0.0060
+Train Epoch: 20	Batch: [100/1000]	Loss: 0.2058	Accuracy: 94.65 % (93.75 %)
+Train Epoch: 20	Batch: [200/1000]	Loss: 0.1352	Accuracy: 95.31 % (97.50 %)
+Train Epoch: 20	Batch: [300/1000]	Loss: 0.1812	Accuracy: 95.62 % (95.83 %)
+Train Epoch: 20	Batch: [400/1000]	Loss: 0.1253	Accuracy: 95.86 % (97.50 %)
+Train Epoch: 20	Batch: [500/1000]	Loss: 0.1260	Accuracy: 96.12 % (95.42 %)
+Train Epoch: 20	Batch: [600/1000]	Loss: 0.1302	Accuracy: 96.27 % (97.08 %)
+Train Epoch: 20	Batch: [700/1000]	Loss: 0.1129	Accuracy: 96.37 % (96.25 %)
+Train Epoch: 20	Batch: [800/1000]	Loss: 0.1887	Accuracy: 96.45 % (94.58 %)
+Train Epoch: 20	Batch: [900/1000]	Loss: 0.0825	Accuracy: 96.56 % (97.50 %)
+Train Epoch: 20	Batch: [1000/1000]	Loss: 0.1156	Accuracy: 96.63 % (96.67 %)
+Validation Epoch: 20			Loss: 0.7691	Accuracy: 73.20 ± 0.42 % (Best)
+Elapsed Time: 2.8h/4.3h
+
+Train Epoch: 21	Learning Rate: 0.0060
+Train Epoch: 21	Batch: [100/1000]	Loss: 0.0811	Accuracy: 97.48 % (99.17 %)
+Train Epoch: 21	Batch: [200/1000]	Loss: 0.0695	Accuracy: 97.49 % (98.75 %)
+Train Epoch: 21	Batch: [300/1000]	Loss: 0.0648	Accuracy: 97.50 % (98.75 %)
+Train Epoch: 21	Batch: [400/1000]	Loss: 0.1501	Accuracy: 97.58 % (96.25 %)
+Train Epoch: 21	Batch: [500/1000]	Loss: 0.0783	Accuracy: 97.56 % (98.33 %)
+Train Epoch: 21	Batch: [600/1000]	Loss: 0.0946	Accuracy: 97.54 % (97.50 %)
+Train Epoch: 21	Batch: [700/1000]	Loss: 0.1057	Accuracy: 97.58 % (97.08 %)
+Train Epoch: 21	Batch: [800/1000]	Loss: 0.0698	Accuracy: 97.60 % (98.75 %)
+Train Epoch: 21	Batch: [900/1000]	Loss: 0.1329	Accuracy: 97.62 % (96.25 %)
+Train Epoch: 21	Batch: [1000/1000]	Loss: 0.1053	Accuracy: 97.64 % (97.08 %)
+Validation Epoch: 21			Loss: 0.7735	Accuracy: 73.38 ± 0.42 % (Best)
+Elapsed Time: 3.0h/4.3h
+
+Train Epoch: 22	Learning Rate: 0.0060
+Train Epoch: 22	Batch: [100/1000]	Loss: 0.0779	Accuracy: 98.08 % (98.33 %)
+Train Epoch: 22	Batch: [200/1000]	Loss: 0.1577	Accuracy: 98.03 % (95.83 %)
+Train Epoch: 22	Batch: [300/1000]	Loss: 0.0656	Accuracy: 98.06 % (99.17 %)
+Train Epoch: 22	Batch: [400/1000]	Loss: 0.0720	Accuracy: 97.97 % (98.33 %)
+Train Epoch: 22	Batch: [500/1000]	Loss: 0.0864	Accuracy: 97.99 % (98.75 %)
+Train Epoch: 22	Batch: [600/1000]	Loss: 0.0806	Accuracy: 98.02 % (98.75 %)
+Train Epoch: 22	Batch: [700/1000]	Loss: 0.0717	Accuracy: 98.03 % (97.92 %)
+Train Epoch: 22	Batch: [800/1000]	Loss: 0.0647	Accuracy: 98.04 % (98.75 %)
+Train Epoch: 22	Batch: [900/1000]	Loss: 0.0717	Accuracy: 98.03 % (98.75 %)
+Train Epoch: 22	Batch: [1000/1000]	Loss: 0.0888	Accuracy: 98.03 % (97.92 %)
+Validation Epoch: 22			Loss: 0.7830	Accuracy: 73.18 ± 0.43 %
+Elapsed Time: 3.1h/4.3h
+
+Train Epoch: 23	Learning Rate: 0.0060
+Train Epoch: 23	Batch: [100/1000]	Loss: 0.0672	Accuracy: 98.26 % (98.75 %)
+Train Epoch: 23	Batch: [200/1000]	Loss: 0.1370	Accuracy: 98.29 % (97.92 %)
+Train Epoch: 23	Batch: [300/1000]	Loss: 0.0501	Accuracy: 98.35 % (100.00 %)
+Train Epoch: 23	Batch: [400/1000]	Loss: 0.0978	Accuracy: 98.36 % (97.92 %)
+Train Epoch: 23	Batch: [500/1000]	Loss: 0.1367	Accuracy: 98.38 % (96.67 %)
+Train Epoch: 23	Batch: [600/1000]	Loss: 0.0655	Accuracy: 98.39 % (99.17 %)
+Train Epoch: 23	Batch: [700/1000]	Loss: 0.0757	Accuracy: 98.39 % (99.17 %)
+Train Epoch: 23	Batch: [800/1000]	Loss: 0.1040	Accuracy: 98.40 % (97.92 %)
+Train Epoch: 23	Batch: [900/1000]	Loss: 0.0744	Accuracy: 98.41 % (98.75 %)
+Train Epoch: 23	Batch: [1000/1000]	Loss: 0.0886	Accuracy: 98.40 % (97.92 %)
+Validation Epoch: 23			Loss: 0.7845	Accuracy: 72.91 ± 0.43 %
+Elapsed Time: 3.3h/4.3h
+
+Train Epoch: 24	Learning Rate: 0.0060
+Train Epoch: 24	Batch: [100/1000]	Loss: 0.0556	Accuracy: 98.61 % (98.75 %)
+Train Epoch: 24	Batch: [200/1000]	Loss: 0.0407	Accuracy: 98.47 % (99.17 %)
+Train Epoch: 24	Batch: [300/1000]	Loss: 0.0720	Accuracy: 98.46 % (97.50 %)
+Train Epoch: 24	Batch: [400/1000]	Loss: 0.0507	Accuracy: 98.43 % (99.17 %)
+Train Epoch: 24	Batch: [500/1000]	Loss: 0.0714	Accuracy: 98.48 % (99.17 %)
+Train Epoch: 24	Batch: [600/1000]	Loss: 0.0596	Accuracy: 98.50 % (97.92 %)
+Train Epoch: 24	Batch: [700/1000]	Loss: 0.0423	Accuracy: 98.53 % (98.75 %)
+Train Epoch: 24	Batch: [800/1000]	Loss: 0.0395	Accuracy: 98.56 % (99.17 %)
+Train Epoch: 24	Batch: [900/1000]	Loss: 0.0272	Accuracy: 98.57 % (100.00 %)
+Train Epoch: 24	Batch: [1000/1000]	Loss: 0.0475	Accuracy: 98.56 % (99.17 %)
+Validation Epoch: 24			Loss: 0.7994	Accuracy: 72.47 ± 0.44 %
+Elapsed Time: 3.4h/4.3h
+
+Train Epoch: 25	Learning Rate: 0.0060
+Train Epoch: 25	Batch: [100/1000]	Loss: 0.0670	Accuracy: 98.75 % (97.92 %)
+Train Epoch: 25	Batch: [200/1000]	Loss: 0.0884	Accuracy: 98.75 % (97.50 %)
+Train Epoch: 25	Batch: [300/1000]	Loss: 0.0648	Accuracy: 98.71 % (99.17 %)
+Train Epoch: 25	Batch: [400/1000]	Loss: 0.0496	Accuracy: 98.73 % (98.75 %)
+Train Epoch: 25	Batch: [500/1000]	Loss: 0.1008	Accuracy: 98.72 % (97.50 %)
+Train Epoch: 25	Batch: [600/1000]	Loss: 0.0719	Accuracy: 98.71 % (97.50 %)
+Train Epoch: 25	Batch: [700/1000]	Loss: 0.0510	Accuracy: 98.75 % (99.58 %)
+Train Epoch: 25	Batch: [800/1000]	Loss: 0.0548	Accuracy: 98.76 % (99.17 %)
+Train Epoch: 25	Batch: [900/1000]	Loss: 0.0466	Accuracy: 98.75 % (99.17 %)
+Train Epoch: 25	Batch: [1000/1000]	Loss: 0.0357	Accuracy: 98.77 % (99.58 %)
+Validation Epoch: 25			Loss: 0.8171	Accuracy: 72.01 ± 0.43 %
+Elapsed Time: 3.5h/4.3h
+
+Train Epoch: 26	Learning Rate: 0.0060
+Train Epoch: 26	Batch: [100/1000]	Loss: 0.0462	Accuracy: 98.75 % (99.17 %)
+Train Epoch: 26	Batch: [200/1000]	Loss: 0.1172	Accuracy: 98.74 % (96.67 %)
+Train Epoch: 26	Batch: [300/1000]	Loss: 0.0931	Accuracy: 98.77 % (98.75 %)
+Train Epoch: 26	Batch: [400/1000]	Loss: 0.0752	Accuracy: 98.81 % (98.75 %)
+Train Epoch: 26	Batch: [500/1000]	Loss: 0.1294	Accuracy: 98.81 % (97.50 %)
+Train Epoch: 26	Batch: [600/1000]	Loss: 0.0709	Accuracy: 98.82 % (97.92 %)
+Train Epoch: 26	Batch: [700/1000]	Loss: 0.0242	Accuracy: 98.86 % (99.58 %)
+Train Epoch: 26	Batch: [800/1000]	Loss: 0.0216	Accuracy: 98.89 % (99.58 %)
+Train Epoch: 26	Batch: [900/1000]	Loss: 0.1085	Accuracy: 98.90 % (97.08 %)
+Train Epoch: 26	Batch: [1000/1000]	Loss: 0.0231	Accuracy: 98.90 % (100.00 %)
+Validation Epoch: 26			Loss: 0.8042	Accuracy: 72.49 ± 0.44 %
+Elapsed Time: 3.7h/4.3h
+
+Train Epoch: 27	Learning Rate: 0.0060
+Train Epoch: 27	Batch: [100/1000]	Loss: 0.0603	Accuracy: 99.02 % (99.17 %)
+Train Epoch: 27	Batch: [200/1000]	Loss: 0.0381	Accuracy: 99.02 % (99.58 %)
+Train Epoch: 27	Batch: [300/1000]	Loss: 0.0368	Accuracy: 99.01 % (100.00 %)
+Train Epoch: 27	Batch: [400/1000]	Loss: 0.0458	Accuracy: 99.00 % (99.17 %)
+Train Epoch: 27	Batch: [500/1000]	Loss: 0.0948	Accuracy: 99.03 % (98.33 %)
+Train Epoch: 27	Batch: [600/1000]	Loss: 0.0651	Accuracy: 99.04 % (97.92 %)
+Train Epoch: 27	Batch: [700/1000]	Loss: 0.0444	Accuracy: 99.04 % (99.58 %)
+Train Epoch: 27	Batch: [800/1000]	Loss: 0.0237	Accuracy: 99.04 % (99.58 %)
+Train Epoch: 27	Batch: [900/1000]	Loss: 0.0318	Accuracy: 99.03 % (100.00 %)
+Train Epoch: 27	Batch: [1000/1000]	Loss: 0.0473	Accuracy: 99.04 % (98.75 %)
+Validation Epoch: 27			Loss: 0.8211	Accuracy: 72.06 ± 0.42 %
+Elapsed Time: 3.8h/4.2h
+
+Train Epoch: 28	Learning Rate: 0.0060
+Train Epoch: 28	Batch: [100/1000]	Loss: 0.0365	Accuracy: 99.07 % (99.58 %)
+Train Epoch: 28	Batch: [200/1000]	Loss: 0.0340	Accuracy: 99.06 % (99.58 %)
+Train Epoch: 28	Batch: [300/1000]	Loss: 0.0646	Accuracy: 99.03 % (98.33 %)
+Train Epoch: 28	Batch: [400/1000]	Loss: 0.0362	Accuracy: 99.05 % (99.17 %)
+Train Epoch: 28	Batch: [500/1000]	Loss: 0.0437	Accuracy: 99.08 % (99.58 %)
+Train Epoch: 28	Batch: [600/1000]	Loss: 0.0354	Accuracy: 99.06 % (99.58 %)
+Train Epoch: 28	Batch: [700/1000]	Loss: 0.0970	Accuracy: 99.08 % (98.33 %)
+Train Epoch: 28	Batch: [800/1000]	Loss: 0.0356	Accuracy: 99.10 % (99.58 %)
+Train Epoch: 28	Batch: [900/1000]	Loss: 0.0373	Accuracy: 99.11 % (99.58 %)
+Train Epoch: 28	Batch: [1000/1000]	Loss: 0.0934	Accuracy: 99.10 % (97.92 %)
+Validation Epoch: 28			Loss: 0.8241	Accuracy: 71.92 ± 0.44 %
+Elapsed Time: 4.0h/4.2h
+
+Train Epoch: 29	Learning Rate: 0.0060
+Train Epoch: 29	Batch: [100/1000]	Loss: 0.0450	Accuracy: 99.13 % (97.92 %)
+Train Epoch: 29	Batch: [200/1000]	Loss: 0.0494	Accuracy: 99.09 % (99.17 %)
+Train Epoch: 29	Batch: [300/1000]	Loss: 0.0619	Accuracy: 99.11 % (98.75 %)
+Train Epoch: 29	Batch: [400/1000]	Loss: 0.0430	Accuracy: 99.17 % (99.17 %)
+Train Epoch: 29	Batch: [500/1000]	Loss: 0.0691	Accuracy: 99.19 % (98.33 %)
+Train Epoch: 29	Batch: [600/1000]	Loss: 0.0509	Accuracy: 99.20 % (99.17 %)
+Train Epoch: 29	Batch: [700/1000]	Loss: 0.0566	Accuracy: 99.20 % (98.33 %)
+Train Epoch: 29	Batch: [800/1000]	Loss: 0.1161	Accuracy: 99.19 % (95.42 %)
+Train Epoch: 29	Batch: [900/1000]	Loss: 0.0367	Accuracy: 99.19 % (99.17 %)
+Train Epoch: 29	Batch: [1000/1000]	Loss: 0.0310	Accuracy: 99.21 % (100.00 %)
+Validation Epoch: 29			Loss: 0.8300	Accuracy: 71.78 ± 0.43 %
+Elapsed Time: 4.1h/4.2h
+
+Train Epoch: 30	Learning Rate: 0.0060
+Train Epoch: 30	Batch: [100/1000]	Loss: 0.0584	Accuracy: 99.33 % (99.58 %)
+Train Epoch: 30	Batch: [200/1000]	Loss: 0.0623	Accuracy: 99.34 % (99.17 %)
+Train Epoch: 30	Batch: [300/1000]	Loss: 0.0371	Accuracy: 99.30 % (99.58 %)
+Train Epoch: 30	Batch: [400/1000]	Loss: 0.0221	Accuracy: 99.31 % (99.58 %)
+Train Epoch: 30	Batch: [500/1000]	Loss: 0.0435	Accuracy: 99.34 % (99.58 %)
+Train Epoch: 30	Batch: [600/1000]	Loss: 0.0323	Accuracy: 99.35 % (100.00 %)
+Train Epoch: 30	Batch: [700/1000]	Loss: 0.0391	Accuracy: 99.34 % (99.58 %)
+Train Epoch: 30	Batch: [800/1000]	Loss: 0.0378	Accuracy: 99.33 % (100.00 %)
+Train Epoch: 30	Batch: [900/1000]	Loss: 0.0318	Accuracy: 99.31 % (99.58 %)
+Train Epoch: 30	Batch: [1000/1000]	Loss: 0.0412	Accuracy: 99.32 % (99.58 %)
+Validation Epoch: 30			Loss: 0.8393	Accuracy: 71.57 ± 0.44 %
+Elapsed Time: 4.2h/4.2h
+
+{'num_epoch': 30, 'save_epoch': 10, 'train_shot': 5, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/CIFAR_FS_MetaOptNet_SVM_biondi_rbf/', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'SVM_RBF', 'dataset': 'CIFAR_FS', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+Train Epoch: 1	Batch: [100/1000]	Loss: 1.5613	Accuracy: 38.29 % (41.25 %)
+Train Epoch: 1	Batch: [200/1000]	Loss: 1.4649	Accuracy: 41.12 % (46.67 %)
+Train Epoch: 1	Batch: [300/1000]	Loss: 1.3760	Accuracy: 42.88 % (52.50 %)
+Train Epoch: 1	Batch: [400/1000]	Loss: 1.3170	Accuracy: 44.00 % (45.42 %)
+Train Epoch: 1	Batch: [500/1000]	Loss: 1.2512	Accuracy: 45.34 % (55.00 %)
+Train Epoch: 1	Batch: [600/1000]	Loss: 1.2767	Accuracy: 46.73 % (45.83 %)
+Train Epoch: 1	Batch: [700/1000]	Loss: 1.1763	Accuracy: 48.08 % (51.67 %)
+Train Epoch: 1	Batch: [800/1000]	Loss: 1.0387	Accuracy: 49.36 % (67.08 %)
+Train Epoch: 1	Batch: [900/1000]	Loss: 0.9378	Accuracy: 50.59 % (66.25 %)
+Train Epoch: 1	Batch: [1000/1000]	Loss: 0.9757	Accuracy: 51.75 % (60.83 %)
+Validation Epoch: 1			Loss: 1.1366	Accuracy: 57.28 ± 0.44 % (Best)
+Elapsed Time: 10m/4.9h
+
+Train Epoch: 2	Learning Rate: 0.1000
+Train Epoch: 2	Batch: [100/1000]	Loss: 1.0091	Accuracy: 65.90 % (66.67 %)
+Train Epoch: 2	Batch: [200/1000]	Loss: 0.9241	Accuracy: 66.19 % (67.08 %)
+Train Epoch: 2	Batch: [300/1000]	Loss: 0.8738	Accuracy: 66.86 % (71.67 %)
+Train Epoch: 2	Batch: [400/1000]	Loss: 0.8087	Accuracy: 67.44 % (73.75 %)
+Train Epoch: 2	Batch: [500/1000]	Loss: 0.8275	Accuracy: 68.06 % (73.33 %)
+Train Epoch: 2	Batch: [600/1000]	Loss: 0.8334	Accuracy: 68.77 % (70.83 %)
+Train Epoch: 2	Batch: [700/1000]	Loss: 0.6878	Accuracy: 69.41 % (80.00 %)
+Train Epoch: 2	Batch: [800/1000]	Loss: 0.7545	Accuracy: 70.07 % (75.00 %)
+Train Epoch: 2	Batch: [900/1000]	Loss: 0.6854	Accuracy: 70.64 % (77.92 %)
+Train Epoch: 2	Batch: [1000/1000]	Loss: 0.7988	Accuracy: 71.19 % (76.67 %)
+Validation Epoch: 2			Loss: 0.9630	Accuracy: 64.46 ± 0.44 % (Best)
+Elapsed Time: 19m/4.9h
+
+Train Epoch: 3	Learning Rate: 0.1000
+Train Epoch: 3	Batch: [100/1000]	Loss: 0.6757	Accuracy: 77.02 % (76.25 %)
+Train Epoch: 3	Batch: [200/1000]	Loss: 0.6943	Accuracy: 77.64 % (76.67 %)
+Train Epoch: 3	Batch: [300/1000]	Loss: 0.6691	Accuracy: 77.98 % (78.75 %)
+Train Epoch: 3	Batch: [400/1000]	Loss: 0.7220	Accuracy: 78.18 % (73.75 %)
+Train Epoch: 3	Batch: [500/1000]	Loss: 0.6437	Accuracy: 78.61 % (79.58 %)
+Train Epoch: 3	Batch: [600/1000]	Loss: 0.5622	Accuracy: 78.85 % (81.25 %)
+Train Epoch: 3	Batch: [700/1000]	Loss: 0.5499	Accuracy: 79.07 % (82.08 %)
+Train Epoch: 3	Batch: [800/1000]	Loss: 0.6605	Accuracy: 79.31 % (79.58 %)
+Train Epoch: 3	Batch: [900/1000]	Loss: 0.5700	Accuracy: 79.60 % (81.25 %)
+Train Epoch: 3	Batch: [1000/1000]	Loss: 0.5697	Accuracy: 79.88 % (87.08 %)
+Validation Epoch: 3			Loss: 0.9575	Accuracy: 64.61 ± 0.46 % (Best)
+Elapsed Time: 29m/4.9h
+
+Train Epoch: 4	Learning Rate: 0.1000
+Train Epoch: 4	Batch: [100/1000]	Loss: 0.7454	Accuracy: 82.35 % (74.17 %)
+Train Epoch: 4	Batch: [200/1000]	Loss: 0.7234	Accuracy: 82.58 % (75.83 %)
+Train Epoch: 4	Batch: [300/1000]	Loss: 0.4565	Accuracy: 82.56 % (86.25 %)
+Train Epoch: 4	Batch: [400/1000]	Loss: 0.5715	Accuracy: 82.79 % (82.50 %)
+Train Epoch: 4	Batch: [500/1000]	Loss: 0.5379	Accuracy: 83.09 % (86.67 %)
+Train Epoch: 4	Batch: [600/1000]	Loss: 0.6873	Accuracy: 83.37 % (78.33 %)
+Train Epoch: 4	Batch: [700/1000]	Loss: 0.4186	Accuracy: 83.59 % (90.00 %)
+Train Epoch: 4	Batch: [800/1000]	Loss: 0.5115	Accuracy: 83.69 % (86.67 %)
+Train Epoch: 4	Batch: [900/1000]	Loss: 0.5408	Accuracy: 83.89 % (81.67 %)
+Train Epoch: 4	Batch: [1000/1000]	Loss: 0.5413	Accuracy: 84.01 % (85.00 %)
+Validation Epoch: 4			Loss: 0.8962	Accuracy: 66.77 ± 0.45 % (Best)
+Elapsed Time: 39m/4.9h
+
+Train Epoch: 5	Learning Rate: 0.1000
+Train Epoch: 5	Batch: [100/1000]	Loss: 0.5564	Accuracy: 85.81 % (81.67 %)
+Train Epoch: 5	Batch: [200/1000]	Loss: 0.4472	Accuracy: 86.20 % (88.75 %)
+Train Epoch: 5	Batch: [300/1000]	Loss: 0.5038	Accuracy: 86.18 % (83.33 %)
+Train Epoch: 5	Batch: [400/1000]	Loss: 0.4732	Accuracy: 86.21 % (89.58 %)
+Train Epoch: 5	Batch: [500/1000]	Loss: 0.4927	Accuracy: 86.21 % (85.83 %)
+Train Epoch: 5	Batch: [600/1000]	Loss: 0.4098	Accuracy: 86.21 % (90.42 %)
+Train Epoch: 5	Batch: [700/1000]	Loss: 0.5335	Accuracy: 86.21 % (82.92 %)
+Train Epoch: 5	Batch: [800/1000]	Loss: 0.3533	Accuracy: 86.32 % (91.25 %)
+Train Epoch: 5	Batch: [900/1000]	Loss: 0.2936	Accuracy: 86.41 % (95.83 %)
+Train Epoch: 5	Batch: [1000/1000]	Loss: 0.3967	Accuracy: 86.54 % (88.33 %)
+Validation Epoch: 5			Loss: 0.9430	Accuracy: 65.10 ± 0.48 %
+Elapsed Time: 49m/4.9h
+
+Train Epoch: 6	Learning Rate: 0.1000
+Train Epoch: 6	Batch: [100/1000]	Loss: 0.4345	Accuracy: 87.18 % (87.08 %)
+Train Epoch: 6	Batch: [200/1000]	Loss: 0.3706	Accuracy: 87.50 % (92.08 %)
+Train Epoch: 6	Batch: [300/1000]	Loss: 0.3910	Accuracy: 87.47 % (90.83 %)
+Train Epoch: 6	Batch: [400/1000]	Loss: 0.4038	Accuracy: 87.70 % (90.00 %)
+Train Epoch: 6	Batch: [500/1000]	Loss: 0.4184	Accuracy: 87.67 % (89.58 %)
+Train Epoch: 6	Batch: [600/1000]	Loss: 0.4926	Accuracy: 87.81 % (83.33 %)
+Train Epoch: 6	Batch: [700/1000]	Loss: 0.4531	Accuracy: 87.83 % (88.33 %)
+Train Epoch: 6	Batch: [800/1000]	Loss: 0.3831	Accuracy: 87.85 % (91.25 %)
+Train Epoch: 6	Batch: [900/1000]	Loss: 0.4054	Accuracy: 87.94 % (86.67 %)
+Train Epoch: 6	Batch: [1000/1000]	Loss: 0.3683	Accuracy: 87.98 % (90.42 %)
+Validation Epoch: 6			Loss: 0.8988	Accuracy: 67.39 ± 0.46 % (Best)
+Elapsed Time: 58m/4.9h
+
+Train Epoch: 7	Learning Rate: 0.1000
+Train Epoch: 7	Batch: [100/1000]	Loss: 0.4021	Accuracy: 88.55 % (88.33 %)
+Train Epoch: 7	Batch: [200/1000]	Loss: 0.5054	Accuracy: 88.63 % (84.58 %)
+Train Epoch: 7	Batch: [300/1000]	Loss: 0.3737	Accuracy: 88.76 % (91.25 %)
+Train Epoch: 7	Batch: [400/1000]	Loss: 0.4468	Accuracy: 88.70 % (88.33 %)
+Train Epoch: 7	Batch: [500/1000]	Loss: 0.2492	Accuracy: 88.75 % (94.17 %)
+Train Epoch: 7	Batch: [600/1000]	Loss: 0.4144	Accuracy: 88.83 % (89.58 %)
+Train Epoch: 7	Batch: [700/1000]	Loss: 0.5146	Accuracy: 88.83 % (81.67 %)
+Train Epoch: 7	Batch: [800/1000]	Loss: 0.3532	Accuracy: 88.80 % (92.08 %)
+Train Epoch: 7	Batch: [900/1000]	Loss: 0.4432	Accuracy: 88.84 % (86.67 %)
+Train Epoch: 7	Batch: [1000/1000]	Loss: 0.3780	Accuracy: 88.89 % (88.75 %)
+Validation Epoch: 7			Loss: 0.9460	Accuracy: 65.51 ± 0.44 %
+Elapsed Time: 1.1h/4.9h
+
+Train Epoch: 8	Learning Rate: 0.1000
+Train Epoch: 8	Batch: [100/1000]	Loss: 0.4612	Accuracy: 89.31 % (89.17 %)
+Train Epoch: 8	Batch: [200/1000]	Loss: 0.4196	Accuracy: 89.02 % (88.75 %)
+Train Epoch: 8	Batch: [300/1000]	Loss: 0.4403	Accuracy: 89.11 % (87.50 %)
+Train Epoch: 8	Batch: [400/1000]	Loss: 0.4714	Accuracy: 89.20 % (86.67 %)
+Train Epoch: 8	Batch: [500/1000]	Loss: 0.3893	Accuracy: 89.35 % (88.75 %)
+Train Epoch: 8	Batch: [600/1000]	Loss: 0.5822	Accuracy: 89.31 % (80.42 %)
+Train Epoch: 8	Batch: [700/1000]	Loss: 0.4565	Accuracy: 89.29 % (87.50 %)
+Train Epoch: 8	Batch: [800/1000]	Loss: 0.3937	Accuracy: 89.31 % (90.83 %)
+Train Epoch: 8	Batch: [900/1000]	Loss: 0.5466	Accuracy: 89.35 % (83.33 %)
+Train Epoch: 8	Batch: [1000/1000]	Loss: 0.3888	Accuracy: 89.41 % (90.00 %)
+Validation Epoch: 8			Loss: 0.9000	Accuracy: 67.97 ± 0.42 % (Best)
+Elapsed Time: 1.3h/4.8h
+
+Train Epoch: 9	Learning Rate: 0.1000
+Train Epoch: 9	Batch: [100/1000]	Loss: 0.2964	Accuracy: 90.02 % (92.92 %)
+Train Epoch: 9	Batch: [200/1000]	Loss: 0.3431	Accuracy: 89.91 % (91.25 %)
+Train Epoch: 9	Batch: [300/1000]	Loss: 0.4032	Accuracy: 89.83 % (87.92 %)
+Train Epoch: 9	Batch: [400/1000]	Loss: 0.4396	Accuracy: 89.78 % (85.42 %)
+Train Epoch: 9	Batch: [500/1000]	Loss: 0.3019	Accuracy: 89.82 % (94.17 %)
+Train Epoch: 9	Batch: [600/1000]	Loss: 0.3755	Accuracy: 89.89 % (86.25 %)
+Train Epoch: 9	Batch: [700/1000]	Loss: 0.3447	Accuracy: 89.91 % (90.83 %)
+Train Epoch: 9	Batch: [800/1000]	Loss: 0.4734	Accuracy: 89.95 % (85.42 %)
+Train Epoch: 9	Batch: [900/1000]	Loss: 0.4716	Accuracy: 89.98 % (84.17 %)
+Train Epoch: 9	Batch: [1000/1000]	Loss: 0.3641	Accuracy: 89.96 % (90.83 %)
+Validation Epoch: 9			Loss: 0.9483	Accuracy: 65.36 ± 0.44 %
+Elapsed Time: 1.5h/4.8h
+
+Train Epoch: 10	Learning Rate: 0.1000
+Train Epoch: 10	Batch: [100/1000]	Loss: 0.3861	Accuracy: 90.74 % (89.58 %)
+Train Epoch: 10	Batch: [200/1000]	Loss: 0.3452	Accuracy: 90.48 % (90.00 %)
+Train Epoch: 10	Batch: [300/1000]	Loss: 0.4833	Accuracy: 90.56 % (85.00 %)
+Train Epoch: 10	Batch: [400/1000]	Loss: 0.3784	Accuracy: 90.58 % (90.42 %)
+Train Epoch: 10	Batch: [500/1000]	Loss: 0.3465	Accuracy: 90.53 % (91.25 %)
+Train Epoch: 10	Batch: [600/1000]	Loss: 0.3952	Accuracy: 90.58 % (90.00 %)
+Train Epoch: 10	Batch: [700/1000]	Loss: 0.4068	Accuracy: 90.57 % (89.58 %)
+Train Epoch: 10	Batch: [800/1000]	Loss: 0.4168	Accuracy: 90.58 % (88.75 %)
+Train Epoch: 10	Batch: [900/1000]	Loss: 0.4939	Accuracy: 90.60 % (83.33 %)
+Train Epoch: 10	Batch: [1000/1000]	Loss: 0.2569	Accuracy: 90.60 % (94.17 %)
+Validation Epoch: 10			Loss: 0.9179	Accuracy: 67.22 ± 0.43 %
+Elapsed Time: 1.6h/4.8h
+
+Train Epoch: 11	Learning Rate: 0.1000
+Train Epoch: 11	Batch: [100/1000]	Loss: 0.4172	Accuracy: 90.79 % (89.17 %)
+Train Epoch: 11	Batch: [200/1000]	Loss: 0.2960	Accuracy: 90.79 % (94.17 %)
+Train Epoch: 11	Batch: [300/1000]	Loss: 0.3178	Accuracy: 90.67 % (92.08 %)
+Train Epoch: 11	Batch: [400/1000]	Loss: 0.2739	Accuracy: 90.79 % (92.92 %)
+Train Epoch: 11	Batch: [500/1000]	Loss: 0.3449	Accuracy: 90.94 % (92.50 %)
+Train Epoch: 11	Batch: [600/1000]	Loss: 0.3963	Accuracy: 90.90 % (89.17 %)
+Train Epoch: 11	Batch: [700/1000]	Loss: 0.3323	Accuracy: 90.95 % (92.92 %)
+Train Epoch: 11	Batch: [800/1000]	Loss: 0.3234	Accuracy: 90.94 % (90.83 %)
+Train Epoch: 11	Batch: [900/1000]	Loss: 0.3450	Accuracy: 90.90 % (90.42 %)
+Train Epoch: 11	Batch: [1000/1000]	Loss: 0.3969	Accuracy: 90.95 % (91.25 %)
+Validation Epoch: 11			Loss: 0.9258	Accuracy: 66.88 ± 0.43 %
+Elapsed Time: 1.8h/4.8h
+
+Train Epoch: 12	Learning Rate: 0.1000
+Train Epoch: 12	Batch: [100/1000]	Loss: 0.3942	Accuracy: 90.58 % (90.83 %)
+Train Epoch: 12	Batch: [200/1000]	Loss: 0.2948	Accuracy: 90.96 % (92.92 %)
+Train Epoch: 12	Batch: [300/1000]	Loss: 0.3666	Accuracy: 91.05 % (88.75 %)
+Train Epoch: 12	Batch: [400/1000]	Loss: 0.2793	Accuracy: 91.08 % (92.92 %)
+Train Epoch: 12	Batch: [500/1000]	Loss: 0.3872	Accuracy: 91.16 % (93.33 %)
+Train Epoch: 12	Batch: [600/1000]	Loss: 0.3789	Accuracy: 91.09 % (89.17 %)
+Train Epoch: 12	Batch: [700/1000]	Loss: 0.3577	Accuracy: 91.16 % (92.50 %)
+Train Epoch: 12	Batch: [800/1000]	Loss: 0.2993	Accuracy: 91.28 % (92.92 %)
+Train Epoch: 12	Batch: [900/1000]	Loss: 0.2926	Accuracy: 91.31 % (91.25 %)
+Train Epoch: 12	Batch: [1000/1000]	Loss: 0.4135	Accuracy: 91.32 % (87.92 %)
+Validation Epoch: 12			Loss: 0.9224	Accuracy: 66.90 ± 0.44 %
+Elapsed Time: 1.9h/4.8h
+
+Train Epoch: 13	Learning Rate: 0.1000
+Train Epoch: 13	Batch: [100/1000]	Loss: 0.3556	Accuracy: 91.28 % (92.50 %)
+Train Epoch: 13	Batch: [200/1000]	Loss: 0.2699	Accuracy: 91.32 % (92.92 %)
+Train Epoch: 13	Batch: [300/1000]	Loss: 0.3781	Accuracy: 91.34 % (94.17 %)
+Train Epoch: 13	Batch: [400/1000]	Loss: 0.4357	Accuracy: 91.45 % (89.17 %)
+Train Epoch: 13	Batch: [500/1000]	Loss: 0.3346	Accuracy: 91.46 % (89.58 %)
+Train Epoch: 13	Batch: [600/1000]	Loss: 0.3542	Accuracy: 91.44 % (90.83 %)
+Train Epoch: 13	Batch: [700/1000]	Loss: 0.2876	Accuracy: 91.41 % (92.50 %)
+Train Epoch: 13	Batch: [800/1000]	Loss: 0.3393	Accuracy: 91.39 % (92.08 %)
+Train Epoch: 13	Batch: [900/1000]	Loss: 0.3099	Accuracy: 91.44 % (92.08 %)
+Train Epoch: 13	Batch: [1000/1000]	Loss: 0.2987	Accuracy: 91.43 % (90.83 %)
+Validation Epoch: 13			Loss: 0.8866	Accuracy: 68.38 ± 0.45 % (Best)
+Elapsed Time: 2.1h/4.8h
+
+Train Epoch: 14	Learning Rate: 0.1000
+Train Epoch: 14	Batch: [100/1000]	Loss: 0.3671	Accuracy: 91.30 % (90.42 %)
+Train Epoch: 14	Batch: [200/1000]	Loss: 0.3146	Accuracy: 91.61 % (92.92 %)
+Train Epoch: 14	Batch: [300/1000]	Loss: 0.3692	Accuracy: 91.61 % (89.58 %)
+Train Epoch: 14	Batch: [400/1000]	Loss: 0.3441	Accuracy: 91.72 % (94.58 %)
+Train Epoch: 14	Batch: [500/1000]	Loss: 0.2183	Accuracy: 91.75 % (96.67 %)
+Train Epoch: 14	Batch: [600/1000]	Loss: 0.3019	Accuracy: 91.72 % (94.17 %)
+Train Epoch: 14	Batch: [700/1000]	Loss: 0.4131	Accuracy: 91.71 % (90.00 %)
+Train Epoch: 14	Batch: [800/1000]	Loss: 0.3442	Accuracy: 91.79 % (92.08 %)
+Train Epoch: 14	Batch: [900/1000]	Loss: 0.3015	Accuracy: 91.79 % (94.17 %)
+Train Epoch: 14	Batch: [1000/1000]	Loss: 0.3742	Accuracy: 91.81 % (91.67 %)
+Validation Epoch: 14			Loss: 0.9111	Accuracy: 67.69 ± 0.44 %
+Elapsed Time: 2.2h/4.8h
+
+Train Epoch: 15	Learning Rate: 0.1000
+Train Epoch: 15	Batch: [100/1000]	Loss: 0.3558	Accuracy: 92.09 % (91.25 %)
+Train Epoch: 15	Batch: [200/1000]	Loss: 0.3362	Accuracy: 91.92 % (92.08 %)
+Train Epoch: 15	Batch: [300/1000]	Loss: 0.3528	Accuracy: 91.98 % (90.00 %)
+Train Epoch: 15	Batch: [400/1000]	Loss: 0.2791	Accuracy: 91.99 % (95.42 %)
+Train Epoch: 15	Batch: [500/1000]	Loss: 0.3402	Accuracy: 92.06 % (92.08 %)
+Train Epoch: 15	Batch: [600/1000]	Loss: 0.3067	Accuracy: 92.01 % (92.08 %)
+Train Epoch: 15	Batch: [700/1000]	Loss: 0.2773	Accuracy: 91.99 % (93.75 %)
+Train Epoch: 15	Batch: [800/1000]	Loss: 0.3308	Accuracy: 91.99 % (90.83 %)
+Train Epoch: 15	Batch: [900/1000]	Loss: 0.3118	Accuracy: 92.00 % (91.67 %)
+Train Epoch: 15	Batch: [1000/1000]	Loss: 0.4389	Accuracy: 91.99 % (88.33 %)
+Validation Epoch: 15			Loss: 0.8962	Accuracy: 68.26 ± 0.44 %
+Elapsed Time: 2.4h/4.8h
+
+Train Epoch: 16	Learning Rate: 0.1000
+Train Epoch: 16	Batch: [100/1000]	Loss: 0.3411	Accuracy: 92.29 % (92.08 %)
+Train Epoch: 16	Batch: [200/1000]	Loss: 0.2694	Accuracy: 92.16 % (95.00 %)
+Train Epoch: 16	Batch: [300/1000]	Loss: 0.3042	Accuracy: 92.15 % (92.50 %)
+Train Epoch: 16	Batch: [400/1000]	Loss: 0.2724	Accuracy: 92.17 % (93.75 %)
+Train Epoch: 16	Batch: [500/1000]	Loss: 0.3900	Accuracy: 92.13 % (90.42 %)
+Train Epoch: 16	Batch: [600/1000]	Loss: 0.3149	Accuracy: 92.10 % (91.67 %)
+Train Epoch: 16	Batch: [700/1000]	Loss: 0.3576	Accuracy: 92.13 % (88.75 %)
+Train Epoch: 16	Batch: [800/1000]	Loss: 0.3071	Accuracy: 92.06 % (93.33 %)
+Train Epoch: 16	Batch: [900/1000]	Loss: 0.3630	Accuracy: 92.09 % (91.25 %)
+Train Epoch: 16	Batch: [1000/1000]	Loss: 0.3578	Accuracy: 92.10 % (92.08 %)
+Validation Epoch: 16			Loss: 0.9478	Accuracy: 65.79 ± 0.43 %
+Elapsed Time: 2.6h/4.8h
+
+Train Epoch: 17	Learning Rate: 0.1000
+Train Epoch: 17	Batch: [100/1000]	Loss: 0.2730	Accuracy: 92.03 % (94.58 %)
+Train Epoch: 17	Batch: [200/1000]	Loss: 0.3039	Accuracy: 92.11 % (92.92 %)
+Train Epoch: 17	Batch: [300/1000]	Loss: 0.2880	Accuracy: 92.14 % (94.58 %)
+Train Epoch: 17	Batch: [400/1000]	Loss: 0.3747	Accuracy: 92.12 % (89.17 %)
+Train Epoch: 17	Batch: [500/1000]	Loss: 0.2949	Accuracy: 92.08 % (94.17 %)
+Train Epoch: 17	Batch: [600/1000]	Loss: 0.3806	Accuracy: 92.14 % (93.33 %)
+Train Epoch: 17	Batch: [700/1000]	Loss: 0.3403	Accuracy: 92.13 % (91.25 %)
+Train Epoch: 17	Batch: [800/1000]	Loss: 0.2436	Accuracy: 92.20 % (95.42 %)
+Train Epoch: 17	Batch: [900/1000]	Loss: 0.3107	Accuracy: 92.21 % (92.50 %)
+Train Epoch: 17	Batch: [1000/1000]	Loss: 0.3757	Accuracy: 92.20 % (89.17 %)
+Validation Epoch: 17			Loss: 0.9031	Accuracy: 67.52 ± 0.45 %
+Elapsed Time: 2.7h/4.8h
+
+Train Epoch: 18	Learning Rate: 0.1000
+Train Epoch: 18	Batch: [100/1000]	Loss: 0.2731	Accuracy: 92.50 % (94.58 %)
+Train Epoch: 18	Batch: [200/1000]	Loss: 0.3859	Accuracy: 92.28 % (88.75 %)
+Train Epoch: 18	Batch: [300/1000]	Loss: 0.3095	Accuracy: 92.36 % (94.17 %)
+Train Epoch: 18	Batch: [400/1000]	Loss: 0.2223	Accuracy: 92.50 % (96.67 %)
+Train Epoch: 18	Batch: [500/1000]	Loss: 0.4003	Accuracy: 92.48 % (88.75 %)
+Train Epoch: 18	Batch: [600/1000]	Loss: 0.2583	Accuracy: 92.43 % (96.25 %)
+Train Epoch: 18	Batch: [700/1000]	Loss: 0.2740	Accuracy: 92.45 % (94.17 %)
+Train Epoch: 18	Batch: [800/1000]	Loss: 0.2968	Accuracy: 92.48 % (92.50 %)
+Train Epoch: 18	Batch: [900/1000]	Loss: 0.3609	Accuracy: 92.52 % (91.25 %)
+Train Epoch: 18	Batch: [1000/1000]	Loss: 0.2729	Accuracy: 92.50 % (94.58 %)
+Validation Epoch: 18			Loss: 0.8650	Accuracy: 69.09 ± 0.44 % (Best)
+Elapsed Time: 2.9h/4.8h
+
+Train Epoch: 19	Learning Rate: 0.1000
+Train Epoch: 19	Batch: [100/1000]	Loss: 0.3292	Accuracy: 92.43 % (92.92 %)
+Train Epoch: 19	Batch: [200/1000]	Loss: 0.2532	Accuracy: 92.48 % (95.00 %)
+Train Epoch: 19	Batch: [300/1000]	Loss: 0.2735	Accuracy: 92.46 % (94.58 %)
+Train Epoch: 19	Batch: [400/1000]	Loss: 0.2684	Accuracy: 92.49 % (95.83 %)
+Train Epoch: 19	Batch: [500/1000]	Loss: 0.3686	Accuracy: 92.53 % (92.50 %)
+Train Epoch: 19	Batch: [600/1000]	Loss: 0.2579	Accuracy: 92.54 % (95.42 %)
+Train Epoch: 19	Batch: [700/1000]	Loss: 0.2700	Accuracy: 92.56 % (95.83 %)
+Train Epoch: 19	Batch: [800/1000]	Loss: 0.3936	Accuracy: 92.52 % (89.17 %)
+Train Epoch: 19	Batch: [900/1000]	Loss: 0.2785	Accuracy: 92.53 % (93.75 %)
+Train Epoch: 19	Batch: [1000/1000]	Loss: 0.3126	Accuracy: 92.56 % (92.50 %)
+Validation Epoch: 19			Loss: 0.9346	Accuracy: 66.07 ± 0.43 %
+Elapsed Time: 3.1h/4.8h
+
+Train Epoch: 20	Learning Rate: 0.0060
+Train Epoch: 20	Batch: [100/1000]	Loss: 0.2423	Accuracy: 94.05 % (93.75 %)
+Train Epoch: 20	Batch: [200/1000]	Loss: 0.2712	Accuracy: 94.75 % (92.50 %)
+Train Epoch: 20	Batch: [300/1000]	Loss: 0.2031	Accuracy: 95.16 % (95.42 %)
+Train Epoch: 20	Batch: [400/1000]	Loss: 0.1786	Accuracy: 95.41 % (95.42 %)
+Train Epoch: 20	Batch: [500/1000]	Loss: 0.2275	Accuracy: 95.55 % (91.25 %)
+Train Epoch: 20	Batch: [600/1000]	Loss: 0.1576	Accuracy: 95.73 % (97.08 %)
+Train Epoch: 20	Batch: [700/1000]	Loss: 0.2651	Accuracy: 95.84 % (92.50 %)
+Train Epoch: 20	Batch: [800/1000]	Loss: 0.1986	Accuracy: 95.95 % (96.25 %)
+Train Epoch: 20	Batch: [900/1000]	Loss: 0.1641	Accuracy: 96.02 % (97.50 %)
+Train Epoch: 20	Batch: [1000/1000]	Loss: 0.1882	Accuracy: 96.08 % (94.17 %)
+Validation Epoch: 20			Loss: 0.8097	Accuracy: 72.39 ± 0.43 % (Best)
+Elapsed Time: 3.2h/4.8h
+
+Train Epoch: 21	Learning Rate: 0.0060
+Train Epoch: 21	Batch: [100/1000]	Loss: 0.1212	Accuracy: 96.89 % (97.08 %)
+Train Epoch: 21	Batch: [200/1000]	Loss: 0.2103	Accuracy: 96.89 % (94.17 %)
+Train Epoch: 21	Batch: [300/1000]	Loss: 0.1538	Accuracy: 96.88 % (96.25 %)
+Train Epoch: 21	Batch: [400/1000]	Loss: 0.1362	Accuracy: 96.94 % (98.33 %)
+Train Epoch: 21	Batch: [500/1000]	Loss: 0.2065	Accuracy: 96.99 % (94.17 %)
+Train Epoch: 21	Batch: [600/1000]	Loss: 0.1139	Accuracy: 97.03 % (98.75 %)
+Train Epoch: 21	Batch: [700/1000]	Loss: 0.1571	Accuracy: 97.04 % (97.50 %)
+Train Epoch: 21	Batch: [800/1000]	Loss: 0.1433	Accuracy: 97.09 % (98.75 %)
+Train Epoch: 21	Batch: [900/1000]	Loss: 0.1879	Accuracy: 97.16 % (96.25 %)
+Train Epoch: 21	Batch: [1000/1000]	Loss: 0.1352	Accuracy: 97.19 % (96.25 %)
+Validation Epoch: 21			Loss: 0.8165	Accuracy: 72.06 ± 0.43 %
+Elapsed Time: 3.4h/4.8h
+
+Train Epoch: 22	Learning Rate: 0.0060
+Train Epoch: 22	Batch: [100/1000]	Loss: 0.1815	Accuracy: 97.64 % (96.67 %)
+Train Epoch: 22	Batch: [200/1000]	Loss: 0.2157	Accuracy: 97.36 % (95.42 %)
+Train Epoch: 22	Batch: [300/1000]	Loss: 0.1171	Accuracy: 97.43 % (99.17 %)
+Train Epoch: 22	Batch: [400/1000]	Loss: 0.1367	Accuracy: 97.51 % (97.92 %)
+Train Epoch: 22	Batch: [500/1000]	Loss: 0.1297	Accuracy: 97.48 % (97.50 %)
+Train Epoch: 22	Batch: [600/1000]	Loss: 0.1392	Accuracy: 97.47 % (97.50 %)
+Train Epoch: 22	Batch: [700/1000]	Loss: 0.1169	Accuracy: 97.50 % (97.92 %)
+Train Epoch: 22	Batch: [800/1000]	Loss: 0.1487	Accuracy: 97.53 % (99.58 %)
+Train Epoch: 22	Batch: [900/1000]	Loss: 0.1138	Accuracy: 97.55 % (98.75 %)
+Train Epoch: 22	Batch: [1000/1000]	Loss: 0.1184	Accuracy: 97.58 % (98.75 %)
+Validation Epoch: 22			Loss: 0.8459	Accuracy: 71.17 ± 0.44 %
+Elapsed Time: 3.6h/4.9h
+
+Train Epoch: 23	Learning Rate: 0.0060
+Train Epoch: 23	Batch: [100/1000]	Loss: 0.1090	Accuracy: 97.73 % (98.75 %)
+Train Epoch: 23	Batch: [200/1000]	Loss: 0.0874	Accuracy: 97.75 % (98.75 %)
+Train Epoch: 23	Batch: [300/1000]	Loss: 0.1816	Accuracy: 97.79 % (95.42 %)
+Train Epoch: 23	Batch: [400/1000]	Loss: 0.1509	Accuracy: 97.77 % (97.92 %)
+Train Epoch: 23	Batch: [500/1000]	Loss: 0.1862	Accuracy: 97.85 % (95.83 %)
+Train Epoch: 23	Batch: [600/1000]	Loss: 0.0965	Accuracy: 97.86 % (99.17 %)
+Train Epoch: 23	Batch: [700/1000]	Loss: 0.1057	Accuracy: 97.89 % (99.17 %)
+Train Epoch: 23	Batch: [800/1000]	Loss: 0.1038	Accuracy: 97.93 % (97.92 %)
+Train Epoch: 23	Batch: [900/1000]	Loss: 0.1605	Accuracy: 97.92 % (96.25 %)
+Train Epoch: 23	Batch: [1000/1000]	Loss: 0.1843	Accuracy: 97.94 % (96.67 %)
+Validation Epoch: 23			Loss: 0.8460	Accuracy: 71.35 ± 0.44 %
+Elapsed Time: 3.7h/4.9h
+
+Train Epoch: 24	Learning Rate: 0.0060
+Train Epoch: 24	Batch: [100/1000]	Loss: 0.1134	Accuracy: 98.20 % (98.75 %)
+Train Epoch: 24	Batch: [200/1000]	Loss: 0.1151	Accuracy: 98.14 % (99.17 %)
+Train Epoch: 24	Batch: [300/1000]	Loss: 0.1669	Accuracy: 98.15 % (95.00 %)
+Train Epoch: 24	Batch: [400/1000]	Loss: 0.0990	Accuracy: 98.13 % (99.58 %)
+Train Epoch: 24	Batch: [500/1000]	Loss: 0.1461	Accuracy: 98.15 % (97.08 %)
+Train Epoch: 24	Batch: [600/1000]	Loss: 0.1323	Accuracy: 98.14 % (98.75 %)
+Train Epoch: 24	Batch: [700/1000]	Loss: 0.1065	Accuracy: 98.15 % (99.17 %)
+Train Epoch: 24	Batch: [800/1000]	Loss: 0.0742	Accuracy: 98.14 % (99.58 %)
+Train Epoch: 24	Batch: [900/1000]	Loss: 0.1812	Accuracy: 98.15 % (97.08 %)
+Train Epoch: 24	Batch: [1000/1000]	Loss: 0.1691	Accuracy: 98.17 % (96.67 %)
+Validation Epoch: 24			Loss: 0.8551	Accuracy: 70.84 ± 0.45 %
+Elapsed Time: 3.9h/4.9h
+
+Train Epoch: 25	Learning Rate: 0.0060
+Train Epoch: 25	Batch: [100/1000]	Loss: 0.1341	Accuracy: 98.31 % (96.67 %)
+Train Epoch: 25	Batch: [200/1000]	Loss: 0.2020	Accuracy: 98.33 % (95.00 %)
+Train Epoch: 25	Batch: [300/1000]	Loss: 0.0854	Accuracy: 98.42 % (99.58 %)
+Train Epoch: 25	Batch: [400/1000]	Loss: 0.0677	Accuracy: 98.43 % (99.58 %)
+Train Epoch: 25	Batch: [500/1000]	Loss: 0.1885	Accuracy: 98.43 % (96.25 %)
+Train Epoch: 25	Batch: [600/1000]	Loss: 0.1831	Accuracy: 98.42 % (96.25 %)
+Train Epoch: 25	Batch: [700/1000]	Loss: 0.1353	Accuracy: 98.43 % (97.50 %)
+Train Epoch: 25	Batch: [800/1000]	Loss: 0.1826	Accuracy: 98.42 % (96.25 %)
+Train Epoch: 25	Batch: [900/1000]	Loss: 0.1192	Accuracy: 98.43 % (99.17 %)
+Train Epoch: 25	Batch: [1000/1000]	Loss: 0.0814	Accuracy: 98.43 % (99.17 %)
+Validation Epoch: 25			Loss: 0.8470	Accuracy: 71.34 ± 0.44 %
+Elapsed Time: 4.0h/4.9h
+
+Train Epoch: 26	Learning Rate: 0.0060
+Train Epoch: 26	Batch: [100/1000]	Loss: 0.0788	Accuracy: 98.48 % (99.17 %)
+Train Epoch: 26	Batch: [200/1000]	Loss: 0.1384	Accuracy: 98.43 % (98.75 %)
+Train Epoch: 26	Batch: [300/1000]	Loss: 0.0716	Accuracy: 98.42 % (100.00 %)
+Train Epoch: 26	Batch: [400/1000]	Loss: 0.1253	Accuracy: 98.45 % (99.17 %)
+Train Epoch: 26	Batch: [500/1000]	Loss: 0.1534	Accuracy: 98.45 % (97.08 %)
+Train Epoch: 26	Batch: [600/1000]	Loss: 0.1469	Accuracy: 98.45 % (97.08 %)
+Train Epoch: 26	Batch: [700/1000]	Loss: 0.1845	Accuracy: 98.43 % (95.00 %)
+Train Epoch: 26	Batch: [800/1000]	Loss: 0.0996	Accuracy: 98.44 % (98.33 %)
+Train Epoch: 26	Batch: [900/1000]	Loss: 0.0755	Accuracy: 98.43 % (100.00 %)
+Train Epoch: 26	Batch: [1000/1000]	Loss: 0.1455	Accuracy: 98.45 % (99.58 %)
+Validation Epoch: 26			Loss: 0.8721	Accuracy: 70.32 ± 0.44 %
+Elapsed Time: 4.2h/4.9h
+
+Train Epoch: 27	Learning Rate: 0.0060
+Train Epoch: 27	Batch: [100/1000]	Loss: 0.1524	Accuracy: 98.66 % (98.33 %)
+Train Epoch: 27	Batch: [200/1000]	Loss: 0.1400	Accuracy: 98.61 % (98.75 %)
+Train Epoch: 27	Batch: [300/1000]	Loss: 0.0991	Accuracy: 98.68 % (98.33 %)
+Train Epoch: 27	Batch: [400/1000]	Loss: 0.0604	Accuracy: 98.71 % (100.00 %)
+Train Epoch: 27	Batch: [500/1000]	Loss: 0.0741	Accuracy: 98.74 % (99.17 %)
+Train Epoch: 27	Batch: [600/1000]	Loss: 0.1535	Accuracy: 98.71 % (97.92 %)
+Train Epoch: 27	Batch: [700/1000]	Loss: 0.0965	Accuracy: 98.67 % (99.58 %)
+Train Epoch: 27	Batch: [800/1000]	Loss: 0.0789	Accuracy: 98.69 % (99.58 %)
+Train Epoch: 27	Batch: [900/1000]	Loss: 0.1420	Accuracy: 98.68 % (97.08 %)
+Train Epoch: 27	Batch: [1000/1000]	Loss: 0.0830	Accuracy: 98.70 % (99.17 %)
+Validation Epoch: 27			Loss: 0.8738	Accuracy: 70.24 ± 0.43 %
+Elapsed Time: 4.4h/4.9h
+
+Train Epoch: 28	Learning Rate: 0.0060
+Train Epoch: 28	Batch: [100/1000]	Loss: 0.1488	Accuracy: 98.68 % (96.67 %)
+Train Epoch: 28	Batch: [200/1000]	Loss: 0.1101	Accuracy: 98.80 % (97.92 %)
+Train Epoch: 28	Batch: [300/1000]	Loss: 0.1061	Accuracy: 98.72 % (99.17 %)
+Train Epoch: 28	Batch: [400/1000]	Loss: 0.1268	Accuracy: 98.70 % (98.33 %)
+Train Epoch: 28	Batch: [500/1000]	Loss: 0.1048	Accuracy: 98.71 % (99.17 %)
+Train Epoch: 28	Batch: [600/1000]	Loss: 0.1564	Accuracy: 98.73 % (99.17 %)
+Train Epoch: 28	Batch: [700/1000]	Loss: 0.1131	Accuracy: 98.72 % (98.33 %)
+Train Epoch: 28	Batch: [800/1000]	Loss: 0.0724	Accuracy: 98.71 % (99.58 %)
+Train Epoch: 28	Batch: [900/1000]	Loss: 0.0857	Accuracy: 98.72 % (99.58 %)
+Train Epoch: 28	Batch: [1000/1000]	Loss: 0.1047	Accuracy: 98.73 % (99.17 %)
+Validation Epoch: 28			Loss: 0.8732	Accuracy: 70.31 ± 0.44 %
+Elapsed Time: 4.5h/4.9h
+
+Train Epoch: 29	Learning Rate: 0.0060
+Train Epoch: 29	Batch: [100/1000]	Loss: 0.0740	Accuracy: 98.83 % (99.17 %)
+Train Epoch: 29	Batch: [200/1000]	Loss: 0.1251	Accuracy: 98.73 % (98.33 %)
+Train Epoch: 29	Batch: [300/1000]	Loss: 0.0853	Accuracy: 98.68 % (100.00 %)
+Train Epoch: 29	Batch: [400/1000]	Loss: 0.1439	Accuracy: 98.69 % (97.92 %)
+Train Epoch: 29	Batch: [500/1000]	Loss: 0.0812	Accuracy: 98.70 % (100.00 %)
+Train Epoch: 29	Batch: [600/1000]	Loss: 0.1361	Accuracy: 98.72 % (97.08 %)
+Train Epoch: 29	Batch: [700/1000]	Loss: 0.1166	Accuracy: 98.73 % (96.67 %)
+Train Epoch: 29	Batch: [800/1000]	Loss: 0.0843	Accuracy: 98.76 % (98.75 %)
+Train Epoch: 29	Batch: [900/1000]	Loss: 0.0961	Accuracy: 98.76 % (99.58 %)
+Train Epoch: 29	Batch: [1000/1000]	Loss: 0.1015	Accuracy: 98.80 % (99.17 %)
+Validation Epoch: 29			Loss: 0.8813	Accuracy: 70.41 ± 0.43 %
+Elapsed Time: 4.7h/4.9h
+
+Train Epoch: 30	Learning Rate: 0.0060
+Train Epoch: 30	Batch: [100/1000]	Loss: 0.1397	Accuracy: 98.99 % (98.75 %)
+Train Epoch: 30	Batch: [200/1000]	Loss: 0.1085	Accuracy: 99.04 % (98.75 %)
+Train Epoch: 30	Batch: [300/1000]	Loss: 0.0787	Accuracy: 99.04 % (100.00 %)
+Train Epoch: 30	Batch: [400/1000]	Loss: 0.0672	Accuracy: 99.05 % (100.00 %)
+Train Epoch: 30	Batch: [500/1000]	Loss: 0.1020	Accuracy: 98.98 % (98.75 %)
+Train Epoch: 30	Batch: [600/1000]	Loss: 0.1636	Accuracy: 98.96 % (98.75 %)
+Train Epoch: 30	Batch: [700/1000]	Loss: 0.1313	Accuracy: 98.96 % (98.33 %)
+Train Epoch: 30	Batch: [800/1000]	Loss: 0.1212	Accuracy: 98.96 % (99.58 %)
+Train Epoch: 30	Batch: [900/1000]	Loss: 0.1370	Accuracy: 98.94 % (98.75 %)
+Train Epoch: 30	Batch: [1000/1000]	Loss: 0.0685	Accuracy: 98.95 % (99.58 %)
+Validation Epoch: 30			Loss: 0.8883	Accuracy: 69.95 ± 0.44 %
+Elapsed Time: 4.9h/4.9h
+

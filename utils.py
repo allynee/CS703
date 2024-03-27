@@ -2,6 +2,7 @@ import os
 import time
 import pprint
 import torch
+import csv
 
 def set_gpu(x):
     os.environ['CUDA_VISIBLE_DEVICES'] = x
@@ -44,3 +45,15 @@ def log(log_file_path, string):
         f.write(string + '\n')
         f.flush()
     print(string)
+
+def log_as_csv(file_path, data):
+    '''
+    Write one line of data .csv file.
+        file_path:     Path of .csv file.
+        data:          Data to record in the form of an array.
+    '''
+
+    with open(file_path, 'a+') as f:
+        writer = csv.writer(f)
+        writer.writerow(data)
+        f.flush()

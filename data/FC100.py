@@ -407,8 +407,6 @@ class FewShotDataloader():
             Exemplars, Test, Kall, nKbase = self.sample_episode()
             Xt, Yt = self.createExamplesTensorData(Test)
             Kall = torch.LongTensor(Kall)
-            if batch_size_current < self.batch_size:
-                print("Um it is smaller...")
             if len(Exemplars) > 0:
                 Xe, Ye = self.createExamplesTensorData(Exemplars)
                 return Xe, Ye, Xt, Yt, Kall, nKbase

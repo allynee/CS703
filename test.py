@@ -140,9 +140,11 @@ if __name__ == '__main__':
         emb_query = emb_query.reshape(1, n_query, -1)
 
         if opt.head == 'SVM':
-            logits = cls_head(emb_query, emb_support, labels_support, opt.way, opt.shot, maxIter=3)
+            # logits = cls_head(emb_query, emb_support, labels_support, opt.way, opt.shot, maxIter=3)
+            logits = cls_head.forward(cls_head.head, cls_head.scale, cls_head.enable_scale, emb_query, emb_support, labels_support, opt.way, opt.shot, maxIter=3)
         else:
-            logits = cls_head(emb_query, emb_support, labels_support, opt.way, opt.shot)
+            # logits = cls_head(emb_query, emb_support, labels_support, opt.way, opt.shot)
+            logits = cls_head.forward(cls_head.head, cls_head.scale, cls_head.enable_scale, emb_query, emb_support, labels_support, opt.way, opt.shot)
 
         acc = count_accuracy(logits.reshape(-1, opt.way), labels_query.reshape(-1))
         test_accuracies.append(acc.item())

@@ -1,0 +1,25 @@
+You are allocated NVIDIA GeForce RTX 3090 on toga
+You are using GPU 0
+Loading FC100 dataset - phase test
+using gpu: 0
+{'gpu': '0', 'load': './experiments/FC100_MetaOptNet_RR/best_model.pth', 'episode': 1000, 'way': 5, 'shot': 1, 'query': 15, 'network': 'ResNet', 'head': 'Ridge', 'dataset': 'FC100'}
+  0%|          | 0/1000 [00:00<?, ?it/s]  0%|          | 0/1000 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "test.py", line 145, in <module>
+    logits = cls_head(emb_query, emb_support, labels_support, opt.way, opt.shot)
+  File "/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+TypeError: forward() missing 3 required positional arguments: 'support_labels', 'n_way', and 'n_shot'
+srun: error: toga: task 0: Exited with exit code 1
+srun: Terminating StepId=51391.1
+Job ID: 51391
+Cluster: crimson
+User/Group: CS704G1/CS704G1
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:07
+CPU Efficiency: 4.17% of 00:02:48 core-walltime
+Job Wall-clock time: 00:00:42
+Memory Utilized: 2.61 GB
+Memory Efficiency: 16.29% of 16.00 GB

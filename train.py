@@ -8,19 +8,20 @@ import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from torch.autograd import Variable
+from datetime import datetime
 
 from models.classification_heads import ClassificationHead
 from models.R2D2_embedding import R2D2Embedding
 from models.protonet_embedding import ProtoNetEmbedding
 from models.ResNet12_embedding import resnet12
 
-from utils import set_gpu, Timer, count_accuracy, check_dir, log
+from utils import set_gpu, Timer, count_accuracy, check_dir, log, log_as_csv
 
 def one_hot(indices, depth):
     """
     Returns a one-hot tensor.
     This is a PyTorch equivalent of Tensorflow's tf.one_hot.
-        
+
     Parameters:
       indices:  a (n_batch, m) Tensor or (m) Tensor.
       depth: a scalar. Represents the depth of the one hot dimension.
@@ -30,7 +31,7 @@ def one_hot(indices, depth):
     encoded_indicies = torch.zeros(indices.size() + torch.Size([depth])).cuda()
     index = indices.view(indices.size()+torch.Size([1]))
     encoded_indicies = encoded_indicies.scatter_(1,index,1)
-    
+
     return encoded_indicies
 
 def get_model(options):
@@ -48,7 +49,7 @@ def get_model(options):
     else:
         print ("Cannot recognize the network type")
         assert(False)
-        
+
     # Choose the classification head
     if options.head == 'ProtoNet':
         cls_head = ClassificationHead(base_learner='ProtoNet').cuda()
@@ -58,10 +59,12 @@ def get_model(options):
         cls_head = ClassificationHead(base_learner='R2D2').cuda()
     elif options.head == 'SVM':
         cls_head = ClassificationHead(base_learner='SVM-CS').cuda()
+    elif options.head == 'SVM_RBF':
+        cls_head = ClassificationHead(base_learner='SVM-RBF').cuda()
     else:
         print ("Cannot recognize the dataset type")
         assert(False)
-        
+
     return (network, cls_head)
 
 def get_dataset(options):
@@ -89,7 +92,7 @@ def get_dataset(options):
     else:
         print ("Cannot recognize the dataset type")
         assert(False)
-        
+
     return (dataset_train, dataset_val, data_loader)
 
 if __name__ == '__main__':
@@ -157,16 +160,23 @@ if __name__ == '__main__':
     set_gpu(opt.gpu)
     check_dir('./experiments/')
     check_dir(opt.save_path)
-    
+
     log_file_path = os.path.join(opt.save_path, "train_log.txt")
     log(log_file_path, str(vars(opt)))
 
+    training_data_file_path = os.path.join(opt.save_path, f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}_train_loss.csv")
+    validation_data_file_path = os.path.join(opt.save_path, f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}_validation_loss.csv")
+
+    if (opt.head == 'SVM_RBF'):
+        log_as_csv(training_data_file_path, ["epoch", "current_batch", "total_batch", "loss", "avg_acc", "batch_acc"])
+        log_as_csv(validation_data_file_path, ["epoch", "loss", "avg_acc", "ci_95"])
+
     (embedding_net, cls_head) = get_model(opt)
-    
-    optimizer = torch.optim.SGD([{'params': embedding_net.parameters()}, 
+
+    optimizer = torch.optim.SGD([{'params': embedding_net.parameters()},
                                  {'params': cls_head.parameters()}], lr=0.1, momentum=0.9, \
                                           weight_decay=5e-4, nesterov=True)
-    
+
     lambda_epoch = lambda e: 1.0 if e < 20 else (0.06 if e < 40 else 0.012 if e < 50 else (0.0024))
     lr_scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda_epoch, last_epoch=-1)
 
@@ -174,21 +184,11 @@ if __name__ == '__main__':
 
     timer = Timer()
     x_entropy = torch.nn.CrossEntropyLoss()
-    
+
     for epoch in range(1, opt.num_epoch + 1):
-        # Train on the training split
-        lr_scheduler.step()
-        
-        # Fetch the current epoch's learning rate
-        epoch_learning_rate = 0.1
-        for param_group in optimizer.param_groups:
-            epoch_learning_rate = param_group['lr']
-            
-        log(log_file_path, 'Train Epoch: {}\tLearning Rate: {:.4f}'.format(
-                            epoch, epoch_learning_rate))
-        
+
         _, _ = [x.train() for x in (embedding_net, cls_head)]
-        
+
         train_accuracies = []
         train_losses = []
 
@@ -200,10 +200,10 @@ if __name__ == '__main__':
 
             emb_support = embedding_net(data_support.reshape([-1] + list(data_support.shape[-3:])))
             emb_support = emb_support.reshape(opt.episodes_per_batch, train_n_support, -1)
-            
+
             emb_query = embedding_net(data_query.reshape([-1] + list(data_query.shape[-3:])))
             emb_query = emb_query.reshape(opt.episodes_per_batch, train_n_query, -1)
-            
+
             # logit_query = cls_head(emb_query, emb_support, labels_support, opt.train_way, opt.train_shot)
             logit_query = cls_head.forward(cls_head.head, cls_head.scale, cls_head.enable_scale, emb_query, emb_support, labels_support, opt.train_way, opt.train_shot)
 
@@ -213,9 +213,9 @@ if __name__ == '__main__':
             log_prb = F.log_softmax(logit_query.reshape(-1, opt.train_way), dim=1)
             loss = -(smoothed_one_hot * log_prb).sum(dim=1)
             loss = loss.mean()
-            
+
             acc = count_accuracy(logit_query.reshape(-1, opt.train_way), labels_query.reshape(-1))
-            
+
             train_accuracies.append(acc.item())
             train_losses.append(loss.item())
 
@@ -223,17 +223,27 @@ if __name__ == '__main__':
                 train_acc_avg = np.mean(np.array(train_accuracies))
                 log(log_file_path, 'Train Epoch: {}\tBatch: [{}/{}]\tLoss: {:.4f}\tAccuracy: {:.2f} % ({:.2f} %)'.format(
                             epoch, i, len(dloader_train), loss.item(), train_acc_avg, acc))
-            
+
+                if (opt.head == 'SVM_RBF'):
+                    log_as_csv(training_data_file_path, [epoch, i, len(dloader_train), loss.item(), train_acc_avg, float(acc)])
+
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
+
+        lr_scheduler.step()
+        # Fetch the learning rate for logging
+        for param_group in optimizer.param_groups:
+            epoch_learning_rate = param_group['lr']
+        log(log_file_path, 'Train Epoch: {}\tLearning Rate: {:.4f}'.format(
+                    epoch, epoch_learning_rate))
 
         # Evaluate on the validation split
         _, _ = [x.eval() for x in (embedding_net, cls_head)]
 
         val_accuracies = []
         val_losses = []
-        
+
         for i, batch in enumerate(tqdm(dloader_val(epoch)), 1):
             data_support, labels_support, data_query, labels_query, _, _ = [x.cuda() for x in batch]
 
@@ -246,18 +256,21 @@ if __name__ == '__main__':
             emb_query = emb_query.reshape(1, test_n_query, -1)
 
             # logit_query = cls_head(emb_query, emb_support, labels_support, opt.test_way, opt.val_shot)
-            logit_query = cls_head.forward(cls_head.head, cls_head.scale, cls_head.enable_scale, emb_query, emb_support, labels_support, opt.train_way, opt.train_shot)
+            logit_query = cls_head.forward(cls_head.head, cls_head.scale, cls_head.enable_scale, emb_query, emb_support, labels_support, opt.test_way, opt.val_shot)
 
             loss = x_entropy(logit_query.reshape(-1, opt.test_way), labels_query.reshape(-1))
             acc = count_accuracy(logit_query.reshape(-1, opt.test_way), labels_query.reshape(-1))
 
             val_accuracies.append(acc.item())
             val_losses.append(loss.item())
-            
+
         val_acc_avg = np.mean(np.array(val_accuracies))
         val_acc_ci95 = 1.96 * np.std(np.array(val_accuracies)) / np.sqrt(opt.val_episode)
 
         val_loss_avg = np.mean(np.array(val_losses))
+
+        if (opt.head == 'SVM_RBF'):
+            log_as_csv(validation_data_file_path, [epoch, val_loss_avg, val_acc_avg, val_acc_ci95])
 
         if val_acc_avg > max_val_acc:
             max_val_acc = val_acc_avg

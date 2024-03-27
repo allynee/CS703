@@ -1,0 +1,4 @@
+{'gpu': '0', 'load': './experiments/FC100_MetaOptNet_RR/best_model.pth', 'episode': 1000, 'way': 5, 'shot': 1, 'query': 15, 'network': 'ResNet', 'head': 'Ridge', 'dataset': 'FC100'}
+{'gpu': '0', 'load': './experiments/FC100_MetaOptNet_RR/best_model.pth', 'episode': 1000, 'way': 5, 'shot': 5, 'query': 15, 'network': 'ResNet', 'head': 'Ridge', 'dataset': 'FC100'}
+{'gpu': '0', 'load': './experiments/FC100_MetaOptNet_RR/best_model.pth', 'episode': 1000, 'way': 5, 'shot': 5, 'query': 15, 'network': 'ResNet', 'head': 'Ridge', 'dataset': 'FC100'}
+{'gpu': '0', 'load': './experiments/FC100_MetaOptNet_RR/best_model.pth', 'episode': 1000, 'way': 5, 'shot': 1, 'query': 15, 'network': 'ResNet', 'head': 'Ridge', 'dataset': 'FC100'}

@@ -22,7 +22,7 @@
 #SBATCH --requeue
 
 # Change below accordingly
-#SBATCH --mail-user=allynezhang.2021@scis.smu.edu.sg,kevano.2020@business.smu.edu.sg
+#SBATCH --mail-user=allynezhang.2021@scis.smu.edu.sg
 #SBATCH --job-name=metalearning_FC100_MetaOptNet_RR          
 
 #################################################
@@ -54,7 +54,12 @@ conda activate metalearning
 srun whichgpu
 
 # Run your command
-srun python train.py --save-path "./experiments/FC100_MetaOptNet_RR" --train-shot 15 --head Ridge --network ResNet --dataset FC100
+# Train
+# srun python train.py --save-path "./experiments/FC100_MetaOptNet_RR" --train-shot 15 --head Ridge --network ResNet --dataset FC100
+
+# Test
+srun python test.py --load ./experiments/FC100_MetaOptNet_RR/best_model.pth --episode 1000 \
+--way 5 --shot 1 --query 15 --head Ridge --network ResNet --dataset FC100
 
 # Execute script with sbatch optim_job_fc100_rr.sh
 

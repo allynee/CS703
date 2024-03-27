@@ -1,0 +1,16 @@
+You are allocated NVIDIA GeForce RTX 3090 on toga
+You are using GPU 3
+/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/bin/python: can't open file 'train.py': [Errno 2] No such file or directory
+srun: error: toga: task 0: Exited with exit code 2
+srun: Terminating StepId=51095.1
+Job ID: 51095
+Cluster: crimson
+User/Group: CS704G1/CS704G1
+State: FAILED (exit code 2)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:01
+CPU Efficiency: 3.57% of 00:00:28 core-walltime
+Job Wall-clock time: 00:00:07
+Memory Utilized: 3.45 MB
+Memory Efficiency: 0.02% of 16.00 GB

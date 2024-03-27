@@ -1,0 +1,284 @@
+You are allocated NVIDIA GeForce RTX 3090 on lava
+You are using GPU 3
+Loading FC100 dataset - phase train
+Loading FC100 dataset - phase val
+using gpu: 0, 1, 2, 3
+{'num_epoch': 60, 'save_epoch': 10, 'train_shot': 15, 'val_shot': 5, 'train_query': 6, 'val_episode': 2000, 'val_query': 15, 'train_way': 5, 'test_way': 5, 'save_path': './experiments/FC100_MetaOptNet_RR', 'gpu': '0, 1, 2, 3', 'network': 'ResNet', 'head': 'Ridge', 'dataset': 'FC100', 'episodes_per_batch': 8, 'eps': 0.0}
+Train Epoch: 1	Learning Rate: 0.1000
+/common/home/projectgrps/CS704/CS704G1/.conda/envs/metalearning/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:134: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [17, 52, 53, 61, 81], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 6: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [17, 23, 71, 87, 93], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 37: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [20, 41, 47, 78, 83], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 30: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [29, 32, 47, 59, 86], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 13: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [0, 41, 53, 56, 93], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 58: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [13, 37, 59, 73, 84], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 23: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [5, 13, 27, 60, 89], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 4: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [58, 61, 71, 78, 86], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 69: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [54, 60, 61, 67, 82], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 61: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [8, 40, 61, 78, 84], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 60: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [25, 28, 68, 69, 83], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 52: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [28, 54, 60, 62, 71], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 73: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [12, 47, 73, 90, 93], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 18: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [23, 56, 58, 62, 94], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 75: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [8, 40, 81, 89, 93], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 56: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [9, 29, 40, 60, 93], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 17: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [12, 16, 41, 81, 89], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 36: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [8, 60, 67, 68, 86], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 59: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [33, 49, 54, 60, 84], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 28: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [8, 9, 39, 81, 86], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 29: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [13, 39, 40, 57, 69], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 79: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [0, 49, 54, 78, 91], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 15: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [16, 48, 49, 54, 84], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 46: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [16, 59, 81, 91, 96], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 40: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [23, 32, 40, 68, 73], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 68: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [33, 58, 60, 67, 84], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 14: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [52, 57, 71, 89, 90], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 11: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [1, 12, 54, 59, 81], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 25: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [48, 58, 81, 91, 96], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 54: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [39, 40, 47, 48, 82], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 24: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [0, 27, 37, 58, 85], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 35: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [22, 59, 82, 90, 93], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 48: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [1, 12, 49, 52, 57], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 47: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [0, 27, 57, 58, 69], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 33: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [8, 10, 37, 40, 59], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 71: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [9, 39, 47, 57, 69], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 53: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [20, 47, 57, 62, 92], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 77: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [17, 27, 32, 47, 73], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 70: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [0, 20, 48, 51, 71], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 43: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [1, 29, 51, 73, 84], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 21: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [41, 52, 58, 59, 60], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 0: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [0, 9, 22, 51, 90], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 5: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [9, 17, 32, 37, 85], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 12: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [1, 25, 37, 41, 51], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 1: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [12, 28, 29, 76, 81], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 67: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [17, 70, 86, 90, 93], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 22: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [48, 61, 82, 85, 94], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 55: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [22, 28, 49, 73, 82], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 62: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [8, 16, 29, 62, 87], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 78: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [33, 39, 58, 76, 83], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 41: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [61, 83, 85, 86, 92], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 72: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [25, 28, 37, 87, 89], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 3: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [5, 40, 48, 52, 57], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 63: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [1, 23, 47, 76, 84], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 8: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [25, 44, 68, 83, 94], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 45: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [1, 17, 67, 70, 93], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 51: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [39, 41, 47, 68, 76], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 26: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [40, 52, 57, 68, 84], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 66: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [8, 23, 44, 62, 69], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 9: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [10, 41, 56, 60, 82], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 20: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [16, 44, 47, 76, 83], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 65: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [33, 81, 82, 89, 92], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 16: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [12, 27, 39, 82, 83], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 44: Size of Test: 30, Size of Exemplars: 75
+Sampled Kbase categories: [], Count: 0
+Sampled Knovel categories: [0, 20, 54, 69, 90], Count: 5
+Size of Tbase: 0, Size of Tnovel: 30, Size of Exemplars: 75
+Iteration 2: Size of Test: 30, Size of Exemplars: 75
+  0%|          | 0/10 [00:00<?, ?it/s]  0%|          | 0/10 [00:03<?, ?it/s]
+Batch 1
+Traceback (most recent call last):
+  File "train.py", line 208, in <module>
+    print("Support data size:", data_support.size())
+NameError: name 'data_support' is not defined
+srun: error: lava: task 0: Exited with exit code 1
+srun: Terminating StepId=51158.1
+Job ID: 51158
+Cluster: crimson
+User/Group: CS704G1/CS704G1
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:17
+CPU Efficiency: 38.64% of 00:00:44 core-walltime
+Job Wall-clock time: 00:00:11
+Memory Utilized: 3.41 MB
+Memory Efficiency: 0.02% of 16.00 GB
